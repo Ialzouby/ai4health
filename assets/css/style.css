@@ -50,6 +50,44 @@
 ***/
 /* banner__section */
 
+/* Video */
+
+<!-- .uniqueVideoBgContainer {
+    position: relative;
+    width: 100%; /* or any desired width */
+    height: 500px; /* or any desired height */
+    overflow: hidden; /* to ensure the video doesn't overflow the container */
+}
+
+.uniqueVideoBg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+/* Optional: Add this if you want to ensure the video scales correctly on all devices */
+@media (min-aspect-ratio: 16/9) {
+    .uniqueVideoBg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .uniqueVideoBg {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* Video */
+
 .circle-main {
     text-align: center;
     height: 230px;
