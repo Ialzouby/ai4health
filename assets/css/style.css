@@ -52,11 +52,14 @@
 
 /* Video */
 
-<!-- .uniqueVideoBgContainer {
+
+.uniqueVideoBgContainer {
     position: relative;
-    width: 100vw;  /* viewport width */
-    height: 100vh; /* viewport height */
+    width: 100vw;
+    height: 70vh;
+    margin: 20px auto;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .uniqueVideoBg {
@@ -67,7 +70,6 @@
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1;
     transform: translate(-50%, -50%);
 }
 
@@ -84,6 +86,12 @@
         height: 100%;
     }
 }
+
+body {
+    overflow-x: hidden;
+}
+
+
 
 
 /* Video */
