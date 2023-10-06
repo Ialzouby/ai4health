@@ -54,9 +54,9 @@
 
 <!-- .uniqueVideoBgContainer {
     position: relative;
-    width: 100%; /* or any desired width */
-    height: 500px; /* or any desired height */
-    overflow: hidden; /* to ensure the video doesn't overflow the container */
+    width: 100vw;  /* viewport width */
+    height: 100vh; /* viewport height */
+    overflow: hidden;
 }
 
 .uniqueVideoBg {
@@ -71,7 +71,6 @@
     transform: translate(-50%, -50%);
 }
 
-/* Optional: Add this if you want to ensure the video scales correctly on all devices */
 @media (min-aspect-ratio: 16/9) {
     .uniqueVideoBg {
         width: 100%;
@@ -85,6 +84,7 @@
         height: 100%;
     }
 }
+
 
 /* Video */
 
