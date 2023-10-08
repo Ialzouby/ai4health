@@ -15,6 +15,11 @@
     display: none;
   }
 
+  body {
+    overflow-x: hidden;
+}
+
+
 
 .choose__us.three .pattern-2{
   left: 0;
