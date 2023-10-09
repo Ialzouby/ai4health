@@ -75,6 +75,13 @@
     min-height: 100%;
 }
 
+@media (max-width: 768px) {
+    .uniqueVideoBg {
+        object-fit: contain;
+    }
+}
+
+
 @media (max-width: 768px) {  /* Adjust the breakpoint if needed */
     .uniqueVideoBgContainer {
         height: 200px !important;  /* Set to your desired height */
