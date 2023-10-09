@@ -1,12 +1,5 @@
 /* Responsive Css */
 
-* {
-  border: 1px solid red;
-}
-
-.brand-carousel {
-    overflow: hidden;
-}
 
 
 @media only screen and (max-width: 1800px){
@@ -21,11 +14,6 @@
   .post__date ul li.two{
     display: none;
   }
-
-  body {
-    overflow-x: hidden;
-}
-
 
 
 .choose__us.three .pattern-2{
@@ -112,8 +100,7 @@ br{
 .pride__block h1 {
   font-size: 60px;
   line-height: 70px;
-  padding: 0px;
-   box-sizing: border-box;
+  padding: 0px 20px;
 }
 .testimonial___data .row >div:nth-child(even){
   margin-top: 0px;
@@ -458,10 +445,8 @@ body.home__three {
     font-size: 30px;
 }
 .brand__section .brand-carousel {
-    padding: 45px 20px;
+  padding: 45px 20px;
 }
-
-
 .banner__two .content-box h2 {
   font-size: 40px;
   line-height: 50px;
