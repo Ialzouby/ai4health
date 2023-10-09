@@ -71,13 +71,11 @@
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
 }
 
-@media (max-width: 768px) {
-    .uniqueVideoBg {
-        object-fit: contain;
-    }
-}
+
 
 @media (min-aspect-ratio: 16/9) {
     .uniqueVideoBg {
