@@ -4,6 +4,10 @@
   border: 1px solid red;
 }
 
+.brand-carousel {
+    overflow: hidden;
+}
+
 
 @media only screen and (max-width: 1800px){
   .choose___two .pattern-1{
