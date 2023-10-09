@@ -16,6 +16,10 @@
   }
 
 
+.uniqueVideoBg {
+    object-fit: contain;  /* This ensures the video fits within its container without cropping */
+}
+
 .choose__us.three .pattern-2{
   left: 0;
 }
