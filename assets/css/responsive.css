@@ -22,8 +22,13 @@
     /* ... other styles ... */
 }
 
-.uniqueVideoBgContainer{
-height: calc(width_of_container * 9 / 16);
+.uniqueVideoBgContainer {
+    position: relative;
+    width: 90vw;
+    height: 55vh;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 .choose__us.three .pattern-2{
