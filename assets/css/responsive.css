@@ -15,29 +15,13 @@
     display: none;
   }
 
-@media (max-width: 768px) {  /* Adjust the breakpoint if needed */
-    .uniqueVideoBgContainer {
-        height: 200px !important;  /* Set to your desired height */
-    }
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .uniqueVideoBg {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .uniqueVideoBg {
-        width: auto;
-        height: 100%;
-    }
-}
-
+/* Directly write styles for mobile without @media wrapper */
 .uniqueVideoBg {
-    object-fit: contain;  /* This ensures the video fits within its container without cropping */
+    object-fit: contain;
+    width: 100%;
+    /* ... other styles ... */
 }
+
 
 .choose__us.three .pattern-2{
   left: 0;
