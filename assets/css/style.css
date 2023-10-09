@@ -824,7 +824,7 @@ section.banner__one {
 .brand__section .brand-carousel {
     position: relative;
     transform: rotate(-10deg);
-    padding: 35px 0px;
+    padding: 0px 0px;
 }
 .brand__section .brand-carousel:before {
     content: "";
