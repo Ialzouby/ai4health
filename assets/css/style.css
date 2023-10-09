@@ -77,7 +77,7 @@
 
 @media (max-width: 768px) {  /* Adjust the breakpoint if needed */
     .uniqueVideoBgContainer {
-        height: 300px;  /* Set to your desired height */
+        height: 100px;  /* Set to your desired height */
     }
 }
 
