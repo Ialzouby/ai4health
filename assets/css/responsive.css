@@ -457,6 +457,10 @@ body.home__three {
   .brand__content .brand__name h1 {
     font-size: 30px;
 }
+.brand__section .brand-carousel {
+    padding: 45px 20px;
+}
+
 
 .banner__two .content-box h2 {
   font-size: 40px;
