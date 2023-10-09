@@ -22,6 +22,9 @@
     /* ... other styles ... */
 }
 
+.uniqueVideoBgContainer{
+height: calc(width_of_container * 16 / 9);
+}
 
 .choose__us.three .pattern-2{
   left: 0;
