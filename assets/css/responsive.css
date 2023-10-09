@@ -18,17 +18,21 @@
 /* Directly write styles for mobile without @media wrapper */
 .uniqueVideoBg {
     object-fit: contain;
-    width: 100%;
+    max-width: 100%;  /* Limit width to container's width */
+    max-height: 100%;
     /* ... other styles ... */
 }
 
 .uniqueVideoBgContainer {
     position: relative;
     width: 90vw;
-    height: 30vh;
+    height: 25vh;
     margin: auto;
     overflow: hidden;
     border-radius: 15px;
+    display: flex;           /* Enable flexbox */
+    align-items: center;     /* Center vertically */
+    justify-content: center;
 }
 
 .choose__us.three .pattern-2{
