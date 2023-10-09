@@ -23,7 +23,7 @@
 }
 
 .uniqueVideoBgContainer{
-height: calc(width_of_container * 16 / 9);
+height: calc(width_of_container * 9 / 16);
 }
 
 .choose__us.three .pattern-2{
