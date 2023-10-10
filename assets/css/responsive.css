@@ -27,7 +27,7 @@
     position: relative;
     width: 90vw;
     height: 25vh;
-    margin: auto;
+    margin: 20px auto;
     overflow: hidden;
     border-radius: 15px;
     display: flex;           /* Enable flexbox */
