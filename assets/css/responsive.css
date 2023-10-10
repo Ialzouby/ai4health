@@ -337,7 +337,7 @@ body.home__three {
   display: none;
 }
 .banner__one.home__three__banner {
-  padding-top: 0px;
+  padding-top: 0;
 }
 .consultation__img img {
   width: 100%;
