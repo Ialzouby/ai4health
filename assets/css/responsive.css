@@ -23,6 +23,12 @@
     /* ... other styles ... */
 }
 
+.banner__one, .banner__one > * {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
 .uniqueVideoBgContainer {
     position: relative;
     width: 90vw;
