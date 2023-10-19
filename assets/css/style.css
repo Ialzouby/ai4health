@@ -2061,6 +2061,10 @@ h3.comments__title {
     position: absolute;
     bottom: 0;
     right: 12px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 /* service page */
 .project__page {
