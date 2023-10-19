@@ -223,7 +223,7 @@ body {
 .banner__data:before {
     content: "";
     border-radius: 679.189px;
-    background: linear-gradient(192deg, rgba(151, 228, 255, 0.32) 0%, rgba(150, 6, 147, 0.60) 100%);
+    background: linear-gradient(192deg, rgba(151, 228, 255, 0.32) 0%, rgba(0, 0, 255, 0.60) 100%);
     filter: blur(150px);
     width: 460.256px;
     height: 679.189px;
@@ -603,7 +603,7 @@ section.banner__one {
     background: #FF0E75;
 }
 .funfact__content.two {
-    background: linear-gradient(192deg, rgba(246, 236, 79, 0.32) 0%, rgba(150, 6, 147, 0.60) 100%);
+background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128, 0.60) 100%);
 }
 .funfact__content.three {
     background: #800599;
@@ -630,7 +630,7 @@ section.banner__one {
     height: 528.747px;
     transform: rotate(21.269deg);
     border-radius: 528.747px;
-    background: linear-gradient(192deg, rgba(246, 236, 79, 0.16) 0%, rgba(150, 6, 147, 0.30) 100%);
+background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128, 0.60) 100%);
     filter: blur(150px);
     content: "";
     position: absolute;
@@ -644,7 +644,7 @@ section.banner__one {
     height: 528.747px;
     transform: rotate(21.269deg);
     border-radius: 528.747px;
-    background: linear-gradient(192deg, rgba(246, 236, 79, 0.26) 0%, rgba(150, 6, 147, 0.50) 100%);
+background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128, 0.60) 100%);
     filter: blur(150px);
     position: absolute;
     bottom: -30px;
@@ -714,7 +714,7 @@ section.banner__one {
     height: 790px;
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(192deg, rgba(246, 236, 79, 0.32) 0%, rgba(150, 6, 147, 0.60) 100%);
+background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128, 0.60) 100%);
     filter: blur(300px);
     left: 50%;
     transform: translate(-50%, 0%);
@@ -840,7 +840,7 @@ section.banner__one {
 .inner-box .image-box {
     display: block;
     overflow: hidden;
-    background: linear-gradient(219deg, #FB0E76 0%, #910694 100%);
+    background: linear-gradient(219deg, #FB0E76 0%, #97e4ff 100%);
     border-radius: 5px 5px 0px 0px;
 }
 .inner-box .image-box img {
@@ -917,14 +917,14 @@ section.banner__one {
     transform: rotate(0deg);
 }
 .inner-box:hover a.theme__btn__two {
-    background: #800599;
+    background: #97e4ff;
 }
 .blog__section:before {
     content: "";
     width: 574.366px;
     height: 847.578px;
     border-radius: 847.578px;
-    background: linear-gradient(192deg, rgba(246, 236, 79, 0.21) 0%, rgba(150, 6, 147, 0.40) 100%);
+    background: linear-gradient(192deg, rgba(151, 228, 255, 0.21) 0%, rgba(6, 14, 38, 0.40) 100%);
     filter: blur(150px);
     position: absolute;
     right: 0;
@@ -1415,7 +1415,7 @@ section.banner__two:before {
     width: 392.703px;
     height: 579.502px;
     border-radius: 579.502px;
-    background: linear-gradient(192deg, rgba(246, 236, 79, 0.26) 0%, rgba(150, 6, 147, 0.50) 100%);
+background: linear-gradient(192deg, rgba(151, 228, 255, 0.26) 0%, rgba(6, 14, 38, 0.50) 100%);
     filter: blur(150px);
     left: 50%;
     bottom: 0;
