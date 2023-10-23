@@ -383,7 +383,7 @@ section.banner__one {
     color: #00061A;
 }
 .title.two h2 span {
-    color: #FF0E75;
+    color: #97e4ff;
 }
 .about__text__block .texts {
     padding: 35px 0px;
@@ -600,7 +600,7 @@ section.banner__one {
     gap: 27px;
 }
 .funfact__content.one {
-    background: #FF0E75;
+    background: #97e4ff;
 }
 .funfact__content.two {
 background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128, 0.60) 100%);
@@ -899,7 +899,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
 .btn__box__two a.theme__btn__two {
     width: 29px;
     height: 35px;
-    background: #FF0E75;
+    background: #97e4ff;
     display: flex;
     font-size: 15px;
     align-items: center;
@@ -1384,7 +1384,7 @@ section.banner__two:before {
     padding: 20px 0px 160px;
 }
 .service__button__two a {
-    color: #FF0E75;
+    color: #97e4ff;
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
@@ -1863,7 +1863,7 @@ h3.comments__title {
     font-weight: 400;
 }
 .comments__content .upper .reply-btn {
-    background: #FF0E75;
+    background: #97e4ff;
     padding: 5px 20px;
 }
 .comments__form.contact__section {
@@ -1952,7 +1952,7 @@ h3.comments__title {
     margin-bottom: 20px;
 }
 .sidebar__blog__post .date {
-    color: #FF0E75;
+    color: #97e4ff;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -2038,7 +2038,7 @@ h3.comments__title {
     padding-bottom: 40px;
 }
 .contact__block .two i {
-    background: #FF0E75;
+    background: #97e4ff;
     color: #fff;
 }
 .google__map img {
@@ -2504,7 +2504,7 @@ section.accomplised__section__two.see__pad.three:before {
     padding: 140px 0px 0px;
 }
 .all__service h3 {
-    background: #FF0E75;
+    background: #97e4ff;
     padding: 14px 30px;
 }
 .sidebar__widget {
@@ -2560,7 +2560,7 @@ ul.service__details__1__cat {
     padding: 40px 0px 35px;
 }
 .service__right h2 span {
-    color: #FF0E75;
+    color: #97e4ff;
 }
 .service__right .row {
     padding: 30px 0px 0px;
@@ -2603,7 +2603,7 @@ ul.service__details__1__cat {
     font-size: 40px;
 }
 .service__right li a:hover i {
-    background: #FF0E75;
+    background: #97e4ff;
     color: #fff;
 }
 .sidebar__widget_network .services__icon i {
@@ -2675,7 +2675,7 @@ ul.service__details__1__cat {
     border-radius: 5px;
 }
 .pro__info {
-    background: #FF0E75;
+    background: #97e4ff;
     border-radius: 10px;
     padding: 60px;
     max-width: 800px;
