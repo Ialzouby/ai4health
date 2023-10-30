@@ -1871,109 +1871,86 @@ h3.comments__title {
     background: #060E26;
     margin-top: 60px;
 }
-.form__inner input {
+.form__inner input, .form__inner textarea, .sidebar__search__box input {
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     width: 100%;
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.75); /* Increased opacity for better readability */
     font-family: Rubik;
-    font-size: 12px;
+    font-size: 14px; /* Increased font size for better readability */
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px; 
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    padding: 22px;
-}
-.form__inner textarea {
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    width: 100%;
-    color: rgba(255, 255, 255, 0.25);
-    font-family: Rubik;
-    font-size: 12px;
-    font-style: normal;
-    height: 164px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 2.4px;
+    letter-spacing: 1.2px; /* Reduced letter spacing for better readability */
     text-transform: uppercase;
-    padding: 22px;
+    padding: 15px; /* Reduced padding for better space utilization */
 }
-.sidebar__search__box input {
-    border-radius: 5px;
-    color: rgba(255, 255, 255, 0.25);
-    font-family: Rubik;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 200% */
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 20px;
-    width: 100%;
+
+.form__inner textarea {
+    height: 164px;
 }
+
 .sidebar__search__box button {
     position: absolute;
     right: 22px;
     color: rgba(255, 255, 255, 1);
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translateY(-50%); /* Simplified transform rule */
 }
+
 .single__sidebar__box {
     background: #060E26;
     padding: 30px;
     margin-bottom: 40px;
 }
+
 .single__sidebar__box h3 {
     font-size: 26px;
-    font-style: normal;
     font-weight: 500;
     line-height: 36px;
-    padding-bottom: 40px;
+    margin-bottom: 20px; /* Changed from padding to margin for consistency */
 }
+
 .sidebar__blog__post .inner {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
 .sidebar__blog__post .inner .img__box {
-    display: flex;
     flex-shrink: 0;
+    max-width: 100%; /* Ensures that the image doesn’t overflow the container */
+    height: auto;
 }
+
 .sidebar__blog__post .title__box h4 {
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 26px;
 }
+
 .sidebar__blog__post li {
     margin-bottom: 20px;
 }
+
 .sidebar__blog__post .date {
     color: #97e4ff;
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.sidebar__blog__post .date i {
-    color: rgba(246, 236, 79, 1);
-}
+
 .sidebar-categories-box li a {
     font-family: Rubik;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 26px;
     display: flex;
     align-items: center;
     gap: 16px;
-    padding-bottom: 20px;
+    margin-bottom: 20px; /* Added margin for spacing between list items */
 }
-.sidebar-categories-box li a i {
-    color: rgba(246, 236, 79, 1);
-}
+
 
 
 /* blog-details end */
