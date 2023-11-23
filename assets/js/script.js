@@ -22,6 +22,27 @@
         a = a+12;
     }
 });
+
+
+	//Custome coode for teaam
+
+document.querySelectorAll('.team__block').forEach(item => {
+    item.addEventListener('click', function() {
+        var popupId = this.getAttribute('data-target');
+        document.querySelector(popupId).style.display = 'block';
+        document.querySelector('.team__page').classList.add('blurred');
+    });
+});
+
+document.querySelectorAll('.close').forEach(item => {
+    item.addEventListener('click', function() {
+        this.closest('.popup').style.display = 'none';
+        document.querySelector('.team__page').classList.remove('blurred');
+    });
+});
+
+
+
 	
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
