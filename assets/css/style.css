@@ -53,6 +53,12 @@
 /* Video */
 
 
+.team__block {
+    position: relative;
+    z-index: 1; /* Or higher if needed */
+}
+
+
 .popup-content {
     /* existing styles */
     width: 30%; /* Good for larger screens */
