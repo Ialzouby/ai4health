@@ -41,6 +41,13 @@ document.querySelectorAll('.close').forEach(item => {
     });
 });
 
+document.querySelectorAll('.team__block').forEach(item => {
+    item.addEventListener('touchstart', function() {
+        // Your existing code
+    });
+});
+
+
 
 
 	
