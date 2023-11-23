@@ -52,6 +52,30 @@
 
 /* Video */
 
+
+.popup-content {
+    /* existing styles */
+    width: 30%; /* Good for larger screens */
+    /* ... other styles ... */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .popup-content {
+        width: 50%; /* Slightly wider on smaller screens */
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .popup-content {
+        width: 80%; /* Much wider on mobile screens */
+        margin: 20px auto; /* Adjust margin for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+
 .main-content.blurred {
     filter: blur(5px);
 }
