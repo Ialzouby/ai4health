@@ -56,11 +56,6 @@
 
 
 
-.popup-content {
-    /* existing styles */
-    width: 30%; /* Good for larger screens */
-    /* ... other styles ... */
-}
 
 
 
@@ -117,12 +112,7 @@
     margin-bottom: 20px; /* Consistent space between team blocks */
 }
 
-/* Additional styling for responsive adjustments if needed */
-@media (max-width: 767px) {
-    .section-title {
-        margin-bottom: 20px; /* Smaller space for mobile devices */
-    }
-}
+
 
 
 .rounded-shadow {
