@@ -45,6 +45,7 @@ document.querySelectorAll('.close').forEach(item => {
 
 
 
+
 	
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
