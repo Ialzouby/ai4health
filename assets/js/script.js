@@ -24,9 +24,7 @@
 });
 
 
-	//Custome coode for teaam
-
-document.querySelectorAll('.team__block').forEach(item => {
+	document.querySelectorAll('.team__block').forEach(item => {
     item.addEventListener('click', function() {
         var popupId = this.getAttribute('data-target');
         document.querySelector(popupId).style.display = 'block';
@@ -40,12 +38,6 @@ document.querySelectorAll('.close').forEach(item => {
         document.querySelector('.team__page').classList.remove('blurred');
     });
 });
-
-
-
-
-
-
 	
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
