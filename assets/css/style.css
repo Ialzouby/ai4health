@@ -60,6 +60,7 @@
 
 
 
+
 .main-content.blurred {
     filter: blur(5px);
 }
@@ -141,6 +142,7 @@
     margin: 20px auto;
     overflow: hidden;
     border-radius: 15px;
+    
 }
 
 .uniqueVideoBg {
