@@ -92,6 +92,16 @@
     font-size: 30px;
     cursor: pointer;
 }
+.popup-content h3 {
+    color: black; /* This sets the color of h3 headings to black */
+}
+
+.popup-content p {
+    color: black; /* This sets the color of paragraphs to black */
+}
+
+
+
 
 
 .section-title {
@@ -100,6 +110,13 @@
 
 .team__block {
     margin-bottom: 20px; /* Consistent space between team blocks */
+}
+
+/* Additional styling for responsive adjustments if needed */
+@media (max-width: 767px) {
+    .section-title {
+        margin-bottom: 20px; /* Smaller space for mobile devices */
+    }
 }
 
 
