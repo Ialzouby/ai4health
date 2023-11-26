@@ -55,6 +55,18 @@
 
 /* Media query for tablets */
 
+
+.section-title {
+    background: linear-gradient(to right, rgba(123, 175, 212, 0.1), rgba(123, 175, 212, 0.5));
+    padding: 10px 20px; /* Adjust padding as needed */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Include padding in the width */
+    text-align: center; /* Center the title text */
+    margin: auto; /* Center the title bar if width is less than 100% */
+}
+
+
+
 @media (max-width: 768px) {
     .popup-content {
         width: 50%; /* Slightly wider on smaller screens */
@@ -78,6 +90,27 @@
         min-width: 100%; /* Ensure the video covers the width */
         min-height: auto; /* Adjust height to maintain aspect ratio */
     }
+}
+
+
+.page__title {
+    margin-bottom: 1px; /* Adjust as needed */
+}
+
+.content__box {
+    padding-bottom: 1px; /* Adjust as needed */
+}
+
+.auto-container {
+    margin-bottom: 1px; /* Adjust as needed */
+}
+
+.bg-layer {
+    /* Adjust padding or margin if necessary */
+}
+
+.bread__crumb, .title {
+    margin-bottom: 1px; /* Adjust as needed */
 }
 
 
@@ -128,11 +161,12 @@
 
 
 .section-title {
-    margin-bottom: 50px; /* Adjust this value as needed for space below titles */
+    margin-bottom: 75px; /* Adjust this value as needed for space below titles */
+    margin-top: 60px;
 }
 
 .team__block {
-    margin-bottom: 20px; /* Consistent space between team blocks */
+    margin-bottom: 30px; /* Consistent space between team blocks */
 }
 
 /* Additional styling for responsive adjustments if needed */
@@ -1848,7 +1882,8 @@ background: linear-gradient(192deg, rgba(151, 228, 255, 0.26) 0%, rgba(6, 14, 38
 }
 
 .team__page .team__block {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+
 }
 .news___block {
     margin-bottom: 30px;
