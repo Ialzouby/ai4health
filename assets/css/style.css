@@ -55,7 +55,20 @@
 
 /* Media query for tablets */
 
+@media (max-width: 768px) {
+    .popup-content {
+        width: 50%; /* Slightly wider on smaller screens */
+    }
+}
 
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .popup-content {
+        width: 80%; /* Much wider on mobile screens */
+        margin: 20px auto; /* Adjust margin for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
 
 
 
@@ -142,7 +155,7 @@
     height: 70vh; /* Full viewport height */
     margin: 0;     /* Remove margin to fill the screen */
     overflow: hidden;
-    padding: 20%;
+    padding: 0;
 }
 
 .uniqueVideoBg {
@@ -152,7 +165,7 @@
     transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
-    object-fit: cover; 
+    object-fit: contain; 
 }
 
 
