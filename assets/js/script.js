@@ -24,6 +24,7 @@
 });
 
 
+
 	document.querySelectorAll('.team__block').forEach(item => {
     item.addEventListener('click', function() {
         var popupId = this.getAttribute('data-target');
@@ -38,6 +39,8 @@ document.querySelectorAll('.close').forEach(item => {
         document.querySelector('.team__page').classList.remove('blurred');
     });
 });
+
+
 	
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
@@ -674,6 +677,10 @@ document.querySelectorAll('.close').forEach(item => {
 	        })
 	    }
 	}
+
+
+
+
     
 
     

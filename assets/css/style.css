@@ -138,11 +138,11 @@
 
 .uniqueVideoBgContainer {
     position: relative;
-    width: 100vw;  /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    width: 70vw;  /* Full viewport width */
+    height: 70vh; /* Full viewport height */
     margin: 0;     /* Remove margin to fill the screen */
     overflow: hidden;
-    
+    padding: 20%;
 }
 
 .uniqueVideoBg {
