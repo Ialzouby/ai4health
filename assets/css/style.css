@@ -66,6 +66,41 @@
 }
 
 
+.home-button {
+    display: inline-block;
+    position: absolute;
+    bottom: -50px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; /* Diameter of the circle */
+    height: 50px; /* Diameter of the circle */
+    border-radius: 50%; /* Makes it circular */
+    background-color: #fff; /* Or any color you prefer */
+    text-align: center;
+    line-height: 50px; /* Vertically center the icon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+    transition: background-color 0.3s, transform 0.1s; /* Smooth transition for hover and active states */
+}
+
+.home-button img {
+    width: 100%; /* Fill the entire width of the button */
+    height: 100%; /* Fill the entire height of the button */
+    object-fit: cover; /* Cover the area without stretching */
+    border-radius: 50%; 
+    vertical-align: middle;
+}
+
+/* Hover state */
+.home-button:hover {
+    background-color: #e0e0e0; /* Change color on hover */
+}
+
+/* Active state */
+.home-button:active {
+    transform: translateY(2px); /* Slight move down effect on click */
+}
+
+
 
 
 
@@ -151,12 +186,19 @@
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
+     position: absolute;
+    top: 5px; /* Adjusted to account for added padding */
+    right: 10px; /* Adjusted to account for added padding */
     font-size: 30px;
     cursor: pointer;
-}
+    padding: 15px; /* Adds padding around the '×', increasing the clickable area */
+    margin: -15px; /* Optional: offsets the added padding to maintain the original position */
+    background: transparent; /* Ensures the padding doesn't add a background color */
+    border: none;
+
+     }
+
+
 .popup-content h3 {
     color: black; /* This sets the color of h3 headings to black */
 }
