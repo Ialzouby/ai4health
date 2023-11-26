@@ -67,6 +67,7 @@
 
 
 .home-button {
+    transition: background-color 0.3s, transform 0.1s;
     display: inline-block;
     position: absolute;
     bottom: -50px; /* Adjust as needed */
@@ -79,7 +80,8 @@
     text-align: center;
     line-height: 50px; /* Vertically center the icon */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
-    transition: background-color 0.3s, transform 0.1s; /* Smooth transition for hover and active states */
+    transition: transform 0.1s ease-in-out; /* Smooth transition for active state */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
 }
 
 .home-button img {
@@ -87,18 +89,29 @@
     height: 100%; /* Fill the entire height of the button */
     object-fit: cover; /* Cover the area without stretching */
     border-radius: 50%; 
-    vertical-align: middle;
+     transition: opacity 0.3s;
+
+
 }
+
+.home-button:hover img {
+    opacity: 0.7; /* Slightly transparent image on hover */
+}
+
+
+/* Enlarge button when clicked */
+.home-button:active {
+    transform: translateX(-50%) scale(1.1); /* Slightly enlarge the button */
+}
+
+
 
 /* Hover state */
 .home-button:hover {
     background-color: #e0e0e0; /* Change color on hover */
 }
 
-/* Active state */
-.home-button:active {
-    transform: translateY(2px); /* Slight move down effect on click */
-}
+
 
 
 
