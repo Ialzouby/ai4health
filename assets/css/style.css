@@ -159,12 +159,10 @@
 
 
 .uniqueVideoBgContainer {
-    position: relative;
-    width: 70vw;  /* Full viewport width */
-    height: 70vh; /* Full viewport height */
-    margin: 0;     /* Remove margin to fill the screen */
+     position: relative;
+    width: 100vw; /* Full width of the viewport */
+    height: 56.25vw; /* Height for 16:9 aspect ratio */
     overflow: hidden;
-    padding: 0;
 }
 
 .uniqueVideoBg {
@@ -172,9 +170,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: contain; 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
