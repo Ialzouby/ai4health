@@ -70,7 +70,16 @@
     }
 }
 
-
+@media (max-width: 768px) {
+    .uniqueVideoBgContainer {
+        width: 100vw;
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+    .uniqueVideoBg {
+        min-width: 100%; /* Ensure the video covers the width */
+        min-height: 100%; /* Ensure the video covers the height */
+    }
+}
 
 
 
