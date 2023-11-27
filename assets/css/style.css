@@ -105,7 +105,7 @@
   align-items: center;
   font-size: 18px;
   border-radius: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
   transition: opacity 0.5s, transform 0.5s; /* Add transitions for opacity and transform */
   cursor: pointer; /* Add cursor pointer for clickable effect */
 }
