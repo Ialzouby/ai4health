@@ -54,6 +54,108 @@
 
 
 /* Media query for tablets */
+/* Testimonial Card */
+
+/* General Styles */
+/* General Styles */
+/* Container styles */
+/* Container styles */
+/* Container styles */
+
+
+
+/* Adjust the styles for the custom-container to fill the screen */
+/* Adjust the styles for the custom-container to fill the screen */
+/* Adjust the styles for the custom-container to fill the screen */
+/* Adjust the styles for the custom-container to fill the screen */
+/* Adjust the styles for the custom-container to fill the screen */
+/* Adjust the styles for the custom-container to fill the screen */
+
+
+.custom-container {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  animation: slide 20s linear infinite alternate;
+  width: 80%;
+  height: 80%;
+}
+
+.slider-block {
+  flex: 0 0 calc(33.33% - 10px);
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: opacity 0.5s, transform 0.5s; /* Add transitions for opacity and transform */
+  cursor: pointer; /* Add cursor pointer for clickable effect */
+}
+
+/* Hover effect - reduce opacity and scale up on hover */
+.slider-block:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-33.33%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.post-image img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Add any additional styles as needed */
+
+/* Add any additional styles as needed */
+
+
+/* Add any additional styles as needed */
 
 
 .section-title {
