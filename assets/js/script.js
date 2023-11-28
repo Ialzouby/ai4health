@@ -23,35 +23,9 @@
     }
 });
 
-const slider = document.querySelector('.slider');
-const sliderBlocks = document.querySelectorAll('.slider-block');
-let currentIndex = 0;
-let direction = 1; // 1 for forward, -1 for backward
+	
 
-function slideNext() {
-  currentIndex += direction;
-  
-  if (currentIndex >= sliderBlocks.length - 2) {
-    currentIndex = sliderBlocks.length - 3;
-    direction = -1;
-  } else if (currentIndex < 0) {
-    currentIndex = 0;
-    direction = 1;
-  }
-  
-  updateSlider();
-}
 
-function updateSlider() {
-  const translateX = -currentIndex * 100; // 100vw is the width of each block
-  slider.style.transform = `translateX(${translateX}vw)`;
-}
-
-// Automatically slide every 3 seconds (adjust the interval as needed)
-setInterval(slideNext, 3000);
-
-// Initial setup
-updateSlider();
 
 
 
