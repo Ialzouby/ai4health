@@ -8,11 +8,12 @@
 
 .custom-container {
   width: 100%;
-  height: 37vh;
+  height: 35vh;
   overflow: hidden;
   display: flex;
   justify-content: center; /* Center horizontally */
-  align-items: center;
+  align-items: flex-end; /* Align content to the bottom vertically */
+  margin-bottom: 0;
 }
 
 .slider {
@@ -21,16 +22,17 @@
   width: 80%;
   height: 80%;
   margin: 0; /* Remove margin */
+  margin-bottom: 0;
 }
 
 .slider-container {
   width: 80%; /* Adjust the width as needed */
-  height: 37vh;
+  height: 35vh;
   overflow: hidden;
   display: flex;
   justify-content: center; /* Center horizontally within .slider-container */
-  align-items: center; /* Center vertically within .slider-container */
-  margin: 0; /* Remove margin */
+  align-items: flex-end; /* Align content to the bottom vertically */
+  margin-bottom: 0; /* Remove margin */
 }
 
 /* Rest of your existing CSS */
@@ -40,6 +42,7 @@
   /* Add a maximum width and center the block horizontally */
   max-width: 300px; /* Adjust the maximum width as needed */
   margin: 0 auto; /* Center horizontally */
+  margin-bottom: 0; 
   height: 250px;
   background-color: #111; /* Dark blue background */
   color: #fff;

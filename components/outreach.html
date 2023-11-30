@@ -1,15 +1,53 @@
 <style>
   /* CSS Styles */
- 
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-  .rectangle-container {
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; /* Increased gap for more spacing */
-  }
+  .titlee-container {
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Center vertically */
+      height: 17vh; /* Make it full-height for vertical centering */
+    }
+
+    /* Styling for the title */
+    .titlee {
+      font-size: 48px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff; /* White text color */
+      position: relative; /* Position relative for the ::before pseudo-element */
+    }
+
+    /* Create the professional design */
+    .titlee::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #007bff, #800080); /* Gradient background with blue and green */
+      top: 0;
+      left: 0;
+      z-index: -1; /* Place it behind the title text */
+      border-radius: 4px; /* Rounded corners */
+      opacity: 0.8; /* Adjust the opacity for a subtle effect */
+      transform: scale(1.05); /* Slightly larger to create depth */
+      filter: blur(5px); /* Apply a blur for a soft look */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+    }
+
+    .rectangle-container {
+      margin: 0 40px 40px 40px; /* Added bottom margin */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; /* Increased gap for more spacing */
+    }
+
+
 
   .rectangle {
     background-color: #111; /* Dark blue background */
@@ -58,11 +96,17 @@
   }
 </style>
 
+
+<div class="titlee-container">
+  <h1 class="titlee">Programs</h1> <!-- Pretty title at the top -->
+</div>
+
+
 <div class="rectangle-container">
   <a href="your_link_1.html" class="rectangle-link">
     <div class="rectangle">
       <div class="rectangle-image">
-        <img src="assets/images/resource/team-01.jpg" alt="Image 1">
+        <img src="assets/images/resource/outreach1.png" alt="Image 1">
       </div>
       <div class="rectangle-text">
         <h3>Graduate Student Internships</h3> <!-- Title for the rectangle -->
@@ -74,7 +118,7 @@
   <a href="your_link_2.html" class="rectangle-link">
     <div class="rectangle">
       <div class="rectangle-image">
-        <img src="assets/images/resource/team-02.jpg" alt="Image 2">
+        <img src="assets/images/resource/outreach2.png" alt="Image 2">
       </div>
       <div class="rectangle-text">
         <h3>Speaker Series</h3>
@@ -86,7 +130,7 @@
   <a href="your_link_3.html" class="rectangle-link">
     <div class="rectangle">
       <div class="rectangle-image">
-        <img src="assets/images/resource/team-03.jpg" alt="Image 3">
+        <img src="assets/images/resource/outreach3.png" alt="Image 3">
       </div>
       <div class="rectangle-text">
         <h3>K-12 Education Program</h3>
@@ -98,7 +142,7 @@
   <a href="your_link_4.html" class="rectangle-link">
     <div class="rectangle">
       <div class="rectangle-image">
-        <img src="assets/images/resource/team-04.jpg" alt="Image 4">
+        <img src="assets/images/resource/outreach4.png" alt="Image 4">
       </div>
       <div class="rectangle-text">
         <h3>Educational Modules</h3>
@@ -110,7 +154,7 @@
   <a href="your_link_5.html" class="rectangle-link">
     <div class="rectangle">
       <div class="rectangle-image">
-        <img src="assets/images/resource/team-05.jpg" alt="Image 5">
+        <img src="assets/images/resource/outreach5.png" alt="Image 5">
       </div>
       <div class="rectangle-text">
         <h3>Education Outreach Program</h3>
@@ -122,7 +166,7 @@
   <a href="your_link_6.html" class="rectangle-link">
     <div class="rectangle">
       <div class="rectangle-image">
-        <img src="assets/images/resource/team-06.jpg" alt="Image 6">
+        <img src="assets/images/resource/outreach6.png" alt="Image 6">
       </div>
       <div class="rectangle-text">
         <h3>Robotics</h3>

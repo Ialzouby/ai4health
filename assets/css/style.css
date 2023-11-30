@@ -1044,7 +1044,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
 /* blog__section  */
 
 .blog__page {
-    margin-top: 0; /* Remove margin at the top */
+    margin-top: 60px; /* Remove margin at the top */
     padding-top: 0; /* Remove padding at the top */
   } 
 
