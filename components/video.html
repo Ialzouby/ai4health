@@ -6,7 +6,7 @@
       height: auto;
       margin: 50px auto; /* Center the container horizontally */
       display: block;
-      border: 0px solid rgb(221, 15, 15)
+      border: none; /* Remove the border */
     }
   
     .videoContainer {
@@ -47,4 +47,37 @@
     </div>
   </div>
   
+  <script>
+    // Get the video element by its ID
+    var video = document.querySelector('.uniqueVideoBg');
+  
+    // Play the video (added this line to start video playback)
+    playVideo();
+  
+    // Play the video
+    function playVideo() {
+      video.play();
+    }
+  
+    // Pause the video
+    function pauseVideo() {
+      video.pause();
+    }
+  
+    // Your existing JavaScript code for popups
+    document.querySelectorAll('.team__block').forEach(item => {
+      item.addEventListener('click', function() {
+        var popupId = this.getAttribute('data-target');
+        document.querySelector(popupId).style.display = 'block';
+        document.querySelector('.team__page').classList.add('blurred');
+      });
+    });
+  
+    document.querySelectorAll('.close').forEach(item => {
+      item.addEventListener('click', function() {
+        this.closest('.popup').style.display = 'none';
+        document.querySelector('.team__page').classList.remove('blurred');
+      });
+    });
+  </script>
   
