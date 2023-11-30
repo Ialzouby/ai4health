@@ -995,10 +995,16 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
 
 /* testimonial-section  end */
 
+.pricing__page {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
 /* brand__section  */
 
 .brand__section .owl-dots.disabled {
     display: none;
+      
 }
 .brand__content .brand__name h1 {
     font-family: Rubik;
@@ -1042,7 +1048,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
     padding-top: 0; /* Remove padding at the top */
   } 
 
-  
+
 .inner-box .image-box {
     display: block;
     overflow: hidden;
@@ -2573,6 +2579,9 @@ h3.comments__title {
     padding: 120px 90px 120px 70px;
 }
 section.accomplised__section__two.see__pad.three:before {
+   
+
+      
     content: "";
     position: absolute;
     border-radius: 528.747px;
