@@ -1,0 +1,85 @@
+
+    <style>
+        /* CSS Styles */
+        body {
+            margin: 20px;
+        }
+
+        .rectangle-container {
+       margin-bottom:5px; 
+            margin-left: 40px;
+            margin-right: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 2fr); /* Making the rows taller */
+            gap: 20px; /* Increased gap for more spacing */
+        }
+
+        .rectangle {
+            background-color: #eaeaea;
+            border-radius: 22px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row; /* Display image and text side by side */
+            align-items: center; /* Centering content vertically */
+            padding: 20px; /* Reduced padding for better appearance */
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .rectangle:hover {
+            transform: scale(1.05); /* Make it bigger on hover */
+            filter: brightness(0.8); /* Make it darker on hover */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        .rectangle-image {
+            flex: 1;
+            max-width: 80%; /* Adjusted image width */
+            padding: 20px; /* Added padding for separation */
+        }
+
+        .rectangle-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .rectangle-text {
+            flex: 1;
+            max-width: 80%; /* Adjusted text width */
+            padding: 20px; /* Added padding for separation */
+        }
+
+        /* Add a link style for clickable rectangles */
+        .rectangle-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+
+    <div class="rectangle-container">
+        <a href="your_link_1.html" class="rectangle-link">
+            <div class="rectangle">
+                <div class="rectangle-image">
+                    <img src="assets/images/resource/team-01.jpg" alt="Image 1">
+                </div>
+                <div class="rectangle-text">
+                    Education Outreach Program
+                </div>
+            </div>
+        </a>
+
+        <a href="your_link_1.html" class="rectangle-link">
+            <div class="rectangle">
+                <div class="rectangle-image">
+                    <img src="image1.jpg" alt="Image 1">
+                </div>
+                <div class="rectangle-text">
+                    Text 1
+                </div>
+            </div>
+        </a>
+
+        <!-- Repeat the rectangle elements for the desired number of rectangles -->
+    </div>
+
+
