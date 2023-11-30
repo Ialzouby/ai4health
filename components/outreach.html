@@ -1,136 +1,138 @@
-
-    <style>
-        /* CSS Styles */
-        
-        
+<style>
+    /* CSS Styles */
     body {
-        margin: 20px;
+      margin: 20px;
     }
-
+  
     .rectangle-container {
-        margin-bottom: 40px;
-        margin-left: 40px;
-        margin-right: 40px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 2fr); /* Making the rows taller */
-        gap: 20px; /* Increased gap for more spacing */
+      margin-bottom: 40px;
+      margin-left: 40px;
+      margin-right: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; /* Increased gap for more spacing */
     }
-
+  
     .rectangle {
-        background-color: #111; /* Dark blue background */
-        border-radius: 30px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row; /* Display image and text side by side */
-        align-items: center; /* Centering content vertically */
-        padding: 20px; /* Reduced padding for better appearance */
-        transition: transform 0.3s, filter 0.3s;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* White shadow */
+      background-color: #111; /* Dark blue background */
+      border-radius: 30px;
+      height: 300px; 
+      overflow: hidden;
+      display: flex;
+      flex-direction: row; /* Display image and text side by side */
+      align-items: center; /* Center content vertically */
+      padding: 20px; /* Padding for the entire rectangle */
+      transition: transform 0.3s, filter 0.3s;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* White shadow */
+      width: 100%; /* Set a fixed width for both left and right rectangles */
     }
-
+  
     .rectangle:hover {
-        transform: scale(1.05); /* Make it bigger on hover */
-        filter: brightness(0.8); /* Make it darker on hover */
-        cursor: pointer; /* Change cursor to pointer on hover */
+      transform: scale(1.05); /* Make it bigger on hover */
+      filter: brightness(0.8); /* Make it darker on hover */
+      cursor: pointer; /* Change cursor to pointer on hover */
     }
-
+  
     .rectangle-image {
-        flex: 1;
-        max-width: 80%; /* Adjusted image width */
-        padding: 20px; /* Added padding for separation */
+      max-width: 300px; /* Adjusted image width */
+      padding-right: 20px; /* Added padding for separation */
     }
-
+  
     .rectangle-image img {
-        max-width: 100%;
-        border-radius: 10px;
+      max-width: 100%;
+      border-radius: 10px;
     }
-
+  
     .rectangle-text {
-        flex: 1;
-        max-width: 80%; /* Adjusted text width */
-        padding: 20px; /* Added padding for separation */
-        color: white; /* White text color */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+      color: white; /* White text color */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
     }
-
+  
+    /* Add a margin between the h3 and p elements */
+    .rectangle-text h3 {
+      margin-bottom: 30px; /* Margin between title and description */
+    }
+  
     /* Add a link style for clickable rectangles */
     .rectangle-link {
-        text-decoration: none;
-        color: inherit;
+      text-decoration: none;
+      color: inherit;
     }
-    </style>
-
-    <div class="rectangle-container">
-        <a href="your_link_1.html" class="rectangle-link">
-            <div class="rectangle">
-                <div class="rectangle-image">
-                    <img src="assets/images/resource/team-01.jpg" alt="Image 1">
-                </div>
-                <div class="rectangle-text">
-                    Education Outreach Program
-                </div>
-            </div>
-        </a>
-
-        <a href="your_link_1.html" class="rectangle-link">
-            <div class="rectangle">
-                <div class="rectangle-image">
-                    <img src="assets/images/resource/team-01.jpg" alt="Image 1">
-                </div>
-                <div class="rectangle-text">
-                    Education Outreach Program
-                </div>
-            </div>
-        </a>
-
-        <a href="your_link_1.html" class="rectangle-link">
-            <div class="rectangle">
-                <div class="rectangle-image">
-                    <img src="assets/images/resource/team-01.jpg" alt="Image 1">
-                </div>
-                <div class="rectangle-text">
-                    Education Outreach Program
-                </div>
-            </div>
-        </a>
-
-        <a href="your_link_1.html" class="rectangle-link">
-            <div class="rectangle">
-                <div class="rectangle-image">
-                    <img src="assets/images/resource/team-01.jpg" alt="Image 1">
-                </div>
-                <div class="rectangle-text">
-                    Education Outreach Program
-                </div>
-            </div>
-        </a>
-
-        <a href="your_link_1.html" class="rectangle-link">
-            <div class="rectangle">
-                <div class="rectangle-image">
-                    <img src="assets/images/resource/team-01.jpg" alt="Image 1">
-                </div>
-                <div class="rectangle-text">
-                    Education Outreach Program
-                </div>
-            </div>
-        </a>
-
-        <a href="your_link_1.html" class="rectangle-link">
-            <div class="rectangle">
-                <div class="rectangle-image">
-                    <img src="assets/images/resource/team-01.jpg" alt="Image 1">
-                </div>
-                <div class="rectangle-text">
-                    Education Outreach Program
-                </div>
-            </div>
-        </a>
-
-   
-
-
-
-        <!-- Repeat the rectangle elements for the desired number of rectangles -->
-    </div>
+</style>
+  
+  <div class="rectangle-container">
+    <a href="your_link_1.html" class="rectangle-link">
+      <div class="rectangle">
+        <div class="rectangle-image">
+          <img src="assets/images/resource/team-01.jpg" alt="Image 1">
+        </div>
+        <div class="rectangle-text">
+          <h3>Graduate Student Internships</h3> <!-- Title for the rectangle -->
+          <p>A program for graduate students to gain practical experience.</p> <!-- Description -->
+        </div>
+      </div>
+    </a>
+  
+    <a href="your_link_2.html" class="rectangle-link">
+      <div class="rectangle">
+        <div class="rectangle-image">
+          <img src="assets/images/resource/team-02.jpg" alt="Image 2">
+        </div>
+        <div class="rectangle-text">
+          <h3>Speaker Series</h3>
+          <p>Engage with experts through our speaker series events.</p>
+        </div>
+      </div>
+    </a>
+  
+    <a href="your_link_3.html" class="rectangle-link">
+      <div class="rectangle">
+        <div class="rectangle-image">
+          <img src="assets/images/resource/team-03.jpg" alt="Image 3">
+        </div>
+        <div class="rectangle-text">
+          <h3>K-12 Education Program</h3>
+          <p>Our program offers educational opportunities for K-12 students.</p>
+        </div>
+      </div>
+    </a>
+  
+    <a href="your_link_4.html" class="rectangle-link">
+      <div class="rectangle">
+        <div class="rectangle-image">
+          <img src="assets/images/resource/team-04.jpg" alt="Image 4">
+        </div>
+        <div class="rectangle-text">
+          <h3>Educational Modules</h3>
+          <p>Explore our interactive educational modules.</p>
+        </div>
+      </div>
+    </a>
+  
+    <a href="your_link_5.html" class="rectangle-link">
+      <div class="rectangle">
+        <div class="rectangle-image">
+          <img src="assets/images/resource/team-05.jpg" alt="Image 5">
+        </div>
+        <div class="rectangle-text">
+          <h3>Education Outreach Program</h3>
+          <p>Engage with communities through our outreach program.</p>
+        </div>
+      </div>
+    </a>
+  
+    <a href="your_link_6.html" class="rectangle-link">
+      <div class="rectangle">
+        <div class="rectangle-image">
+          <img src="assets/images/resource/team-06.jpg" alt="Image 6">
+        </div>
+        <div class="rectangle-text">
+          <h3>Robotics</h3>
+          <p>Learn about our robotics programs and initiatives.</p>
+        </div>
+      </div>
+    </a>
+  
+    <!-- Repeat the rectangle elements for other programs -->
+  </div>
+  
