@@ -9,6 +9,17 @@
   align-items: center;
 }
 
+
+
+.slider {
+  display: flex;
+  animation: slide 20s linear infinite alternate;
+  width: 80%;
+  height: 80%;
+}
+
+/* Existing CSS styles */
+
 .slider-container {
   width: 80%; /* Adjust the width as needed */
   height: 40vh;
@@ -18,37 +29,35 @@
   align-items: center; /* Center vertically within .slider-container */
 }
 
-.slider {
-  display: flex;
-  animation: slide 20s linear infinite alternate;
-  width: 80%;
-  height: 80%;
-}
-
 .slider-block {
-    flex: 0 0 calc(33.33% - 10px);
-    height: 250px;
-    background-color: #111; /* Dark blue background */
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 18px;
-    border-radius: 10px;
-    margin-right: 18px;
-    transition: opacity 0.5s, transform 0.5s, box-shadow 0.5s; /* Added box-shadow transition */
-    cursor: pointer;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White shadow (updated shadow style) */
+  /* Add a maximum width and center the block horizontally */
+  max-width: 300px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center horizontally */
+  height: 250px;
+  background-color: #111; /* Dark blue background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-right: 18px;
+  transition: opacity 0.5s, transform 0.5s, box-shadow 0.5s; /* Added box-shadow transition */
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White shadow (updated shadow style) */
 }
 
 /* Hover effect - reduce opacity and scale up on hover */
 .slider-block:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); /* Adjusted shadow on hover */
+  opacity: 0.8;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); /* Adjusted shadow on hover */
 }
+
+/* Existing CSS styles */
+
 
 
 .image {
