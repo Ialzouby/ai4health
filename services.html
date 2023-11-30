@@ -47,93 +47,11 @@
 
         <!-- main header -->
         <header class="main-header header__style__one ">
-            <!-- header-top-one -->
-            <div class="header-top-one">
-                <div class="auto-container">
-                    <div class="top__inner">
-                        <div class="top__hrader__left">
-                            <ul>
-                                <li><span>Address :</span>   9201 University City Blvd, Charlotte, NC 28223</li>
-                                <li>/</li>
-                                <li><span>Email :</span> <a href="mailto:info@company.com">Ai4Health@charlotte.edu.com</a></li>
-                            </ul>
-                        </div>
-                        <div class="top__hrader__right">
-                            <ul>
-                                <li><a href="#"><i class="icon-10"></i></a></li>
-                                <li><a href="#"><i class="icon-14"></i></a></li>
-                                <li><a href="#"><i class="icon-01"></i></a></li>
-                                <li><a href="#"><i class="icon-11"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- header-lower -->
-            <div class="header-lower">
-                <div class="auto-container">
-                    <div class="outer-box">
-                        <div class="logo-box">
-                            <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
-                        </div>
-                        <div class="menu-area clearfix">
-                            <!--Mobile Navigation Toggler-->
-                            <div class="mobile-nav-toggler">
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
-                            </div>
-                            <nav class="main-menu navbar-expand-md navbar-light">
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation clearfix home-menu">
-                                      <li><a href="index.html">Home</a></li>
-
-
-                                        <li class="dropdown"><a href="#">About</a>
-                                            <ul>
-                                               
-                                             <li><a href="about.html">About  </a></li>
-
-                                             <li><a href="team.html">Team  </a></li>   
-                                        
-                                    </ul>
-                                        
-                                                <li><a href="services.html">Research </a></li>
-
-                                                 <li><a href="pricing.html">Industrial</a></li>
-
-                                                 <li><a href="testimonial.html">Outreach</a></li>
-                                                
-                                                <li><a href="blog.html">News</a></li>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="btn-box">
-                            <a href="about.html" class="theme-btn theme-btn-one"><i class="icon-02"></i> About</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--sticky Header-->
-            <div class="sticky-header">
-                <div class="auto-container">
-                    <div class="outer-box">
-                        <div class="logo-box">
-                            <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
-                        </div>
-                        <div class="menu-area clearfix">
-                            <nav class="main-menu clearfix">
-                                <!--Keep This Empty / Menu will come through Javascript-->
-                            </nav>
-                        </div>
-                        <div class="btn-box">
-                            <a href="contact.html" class="theme-btn theme-btn-one"><i class="icon-02"></i> Discuses</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+            <div>
+        <div data-include="components/header.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        </div>
+</header>
         <!-- main-header end -->
 
         <!-- Mobile Menu  -->
@@ -273,59 +191,7 @@
        
 
         <!-- service-contact -->
-        <div class="service__contact see__pad p_relative">
-            <div class="auto-container">
-                <div class="service__contact__block">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="service__form__data">
-                                <div class="form__title">
-                                    <div class="title__data">
-                                        <div class="sub__title">
-                                            <h4>Have Questions?</h4>
-                                        </div>
-                                        <div class="title">
-                                            <h2>Send a message</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-inner">
-                                    <form method="post" action="contact.php" class="default-form"> 
-                                        <div class="row clearfix">
-                                            <div class="col-xl-6 form-group">
-                                                <input type="name" name="name" placeholder="Your Name *" required="">
-                                            </div>
-                                            <div class="col-xl-6 col-lg-12 form-group">
-                                                <input type="email" name="email" placeholder="Your Email *" required="">
-                                            </div>
-                                            <div class="col-xl-6 col-lg-12 form-group">
-                                                <input type="text" name="subject" placeholder="Your Subject " required="">
-                                            </div>
-                                            <div class="col-xl-6 col-lg-12 form-group">
-                                                <input type="text" name="phone" placeholder="Your Phone " required="">
-                                            </div>
-                                            <div class="ccol-xl-6 col-lg-12 form-group">
-                                                <textarea name="message" placeholder="Message"></textarea>
-                                            </div>
-                                            <div class="col-xl-12 form-group message-btn btn-box">
-                                                <button class="theme-btn theme-btn-one" type="submit" name="submit-form">Send your Message</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="service__contact__img">
-                                <figure>
-                                    <img src="assets/images/resource/man.png" alt="">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+     
         <!-- service-contact-end -->
         
         <!-- footer-one -->
