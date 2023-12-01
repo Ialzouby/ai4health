@@ -247,13 +247,12 @@
     position: relative;
     background-color: #fff;
     margin: 10% auto;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
     min-width: 300px; /* Minimum width */
     max-width: 80%; /* Maximum width */
     width: auto; 
-    min-height: 300px; /* Minimum width */
-    max-height: 50%; /* Maximum width */
+  
     height: auto; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
@@ -278,12 +277,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
+    margin-bottom: 2; 
 }
 
 .popup-content p {
     color: black; /* This sets the color of paragraphs to black */
 }
-
 
 
 
@@ -306,7 +305,25 @@
 
 
 
+.popup-image .homepage-link {
+    display: block; /* Ensures it takes its own line */
+    text-align: center; /* Center align the text */
+    margin-top: 10px; /* Space between the image and the text */
+    color: #007bff; /* Or any color you prefer for the link */
+    text-decoration: none; /* Optional: Removes underline */
+    font-weight: bold; /* Optional: Makes text bold */
+}
 
+.popup-image .homepage-link:hover {
+    text-decoration: underline; /* Optional: Underline on hover */
+}
+
+.popup-text .role {
+    font-size: smaller; /* Smaller than the h3 size */
+    color: #6c757d; /* A lighter color; adjust as needed */
+    margin-top: 5px; /* Space above the role text */
+    margin-bottom: 10px; /* Space below the role text */
+}
 
 
 
@@ -345,14 +362,17 @@
                 <a href="https://webpages.charlotte.edu/pwang13/" target="_blank">
                     <img src="assets/images/resource/team-09.jpg" alt="Dr. Pu Wang">
                 </a>
+                <a href="https://webpages.charlotte.edu/pwang13/" class="homepage-link" target="_blank">HomePage</a> <!-- Added link -->
             </div>
             <div class="popup-text">
                 <h3>Dr. Pu Wang</h3>
+                <p class="role">Principal Investigator</p>
                 <p>Information about Dr. Pu Wang...</p>
             </div>
         </div>
     </div>
 </div>
+
 
 
 <!-- Leadership Member 2 -->
