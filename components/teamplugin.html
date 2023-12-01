@@ -329,7 +329,11 @@
 
 </style>
 
-
+<html lang="en">
+<head>
+    <!-- Head content (like meta tags, title, link to CSS, etc.) goes here -->
+</head>
+<body>
 
 <div class="auto-container">
     <div class="row">
@@ -673,3 +677,30 @@
 <!-- Repeat for other staff members -->
 </div>
 </div>
+
+<script>
+    // Your JavaScript code here
+
+    // Example: Event listeners for .team__block
+    document.querySelectorAll('.team__block').forEach(item => {
+        item.addEventListener('click', function() {
+            var popupId = this.getAttribute('data-target');
+            document.querySelector(popupId).style.display = 'block';
+            // Additional code if needed...
+        });
+    });
+
+    // Event listeners for .close buttons in popups
+    document.querySelectorAll('.close').forEach(item => {
+        item.addEventListener('click', function() {
+            this.closest('.popup').style.display = 'none';
+            // Additional code if needed...
+        });
+    });
+
+    // ... other JavaScript code ...
+
+</script>
+
+</body>
+</html>
