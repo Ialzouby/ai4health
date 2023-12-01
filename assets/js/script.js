@@ -49,7 +49,7 @@ setInterval(updateSlider, 2000); // Adjust interval based on your slider's speed
 
 
 
-
+/*
 	document.querySelectorAll('.team__block').forEach(item => {
     item.addEventListener('click', function() {
         var popupId = this.getAttribute('data-target');
@@ -65,7 +65,7 @@ document.querySelectorAll('.close').forEach(item => {
     });
 });
 
-
+*/
 	
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
