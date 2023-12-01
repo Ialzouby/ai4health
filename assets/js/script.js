@@ -25,6 +25,26 @@
 
 	
 
+// JavaScript to apply fade-out effect in outreach
+let currentIndex = 0; // Adjust based on your slider's initial block
+const totalBlocks = document.querySelectorAll('.slider-block').length;
+
+function updateSlider() {
+  // Remove fade-out class from all blocks
+  document.querySelectorAll('.slider-block').forEach(block => {
+    block.classList.remove('fade-out');
+  });
+
+  // Add fade-out class to the block that's sliding out
+  let fadeOutIndex = currentIndex % totalBlocks;
+  document.querySelectorAll('.slider-block')[fadeOutIndex].classList.add('fade-out');
+
+  // Update currentIndex for next cycle (adjust logic based on your slider's direction)
+  currentIndex++;
+}
+
+// Assuming you have a mechanism to trigger this function periodically
+setInterval(updateSlider, 2000); // Adjust interval based on your slider's speed
 
 
 
