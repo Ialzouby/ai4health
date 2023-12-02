@@ -1,0 +1,592 @@
+<style> 
+    .team__data {
+        display: flex;
+        gap: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 30px 0px;
+    }
+    .team__data__left img {
+        width: 80px;
+        padding-top: 8px;
+    }
+    .team__data__right h3 {
+        font-size: 26px;
+        line-height: 36px;
+        padding-bottom: 10px;   
+    }
+    .team__data:nth-child(2) {
+        padding-top: 0px;
+    }
+    .team__data:nth-child(4) {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    /* choose__us-section  end */
+    
+    /* team-section   */
+    
+    .team__img img {
+        width: 100%;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    }
+    .team__img {
+        position: relative;
+    }
+    .team__img:before {
+        content: "";
+        background: rgba(128, 5, 153, 0.3);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        transition: all 500ms ease;
+        top: -30px;
+    }
+    .team__block:hover .team__img:before {
+        background: #4F502C;
+    }
+    .team__block {
+        text-align: center;
+    }
+    .team__name {
+        padding: 20px 0px 10px;
+    }
+    .team__media ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .team__media ul a {
+        color: #800599;
+        font-weight: 600;
+        font-size: 20px;
+        font-family: Rubik;
+        line-height: 30px;
+    }
+    .team__media ul a:hover {
+        color: #97e4ff;
+    }
+    .team__section .pattern-3 {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background-repeat:no-repeat ;
+    }
+    .team__section:before {
+        content: "";
+        width: 574.366px;
+        height: 847.578px;
+        transform: rotate(21.269deg);
+        border-radius: 847.578px;
+        background: linear-gradient(192deg, rgba(246, 236, 79, 0.21) 0%, rgba(150, 6, 147, 0.40) 100%);
+        filter: blur(150px);
+        position: absolute;
+        right: -44px;
+        top: -200px;
+    }
+    
+    
+    /* my code */
+    
+    .section-title {
+        background: linear-gradient(to right, rgba(123, 175, 212, 0.1), rgba(123, 175, 212, 0.5));
+        padding: 10px 20px; /* Adjust padding as needed */
+        width: 100%; /* Full width of the container */
+        box-sizing: border-box; /* Include padding in the width */
+        text-align: center; /* Center the title text */
+        margin: auto; /* Center the title bar if width is less than 100% */
+    }
+    
+    
+    .home-button {
+        transition: background-color 0.3s, transform 0.1s;
+        display: inline-block;
+        position: absolute;
+        bottom: -50px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px; /* Diameter of the circle */
+        height: 50px; /* Diameter of the circle */
+        border-radius: 50%; /* Makes it circular */
+        background-color: #fff; /* Or any color you prefer */
+        text-align: center;
+        line-height: 50px; /* Vertically center the icon */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+        transition: transform 0.1s ease-in-out; /* Smooth transition for active state */
+        cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    }
+    
+    .home-button img {
+        width: 100%; /* Fill the entire width of the button */
+        height: 100%; /* Fill the entire height of the button */
+        object-fit: cover; /* Cover the area without stretching */
+        border-radius: 50%; 
+         transition: opacity 0.3s;
+    
+    
+    }
+    
+    .home-button:hover img {
+        opacity: 0.7; /* Slightly transparent image on hover */
+    }
+    
+    
+    /* Enlarge button when clicked */
+    .home-button:active {
+        transform: translateX(-50%) scale(1.1); /* Slightly enlarge the button */
+    }
+    
+    
+    
+    /* Hover state */
+    .home-button:hover {
+        background-color: #e0e0e0; /* Change color on hover */
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media (max-width: 768px) {
+        .popup-content {
+            width: 80%; /* Slightly wider on smaller screens */
+        }
+    }
+    
+    /* Media query for mobile phones */
+    @media (max-width: 480px) {
+        .popup-content {
+            width: 80%; /* Much wider on mobile screens */
+            margin: 20px auto; /* Adjust margin for smaller screens */
+            padding: 10px; /* Adjust padding for smaller screens */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .uniqueVideoBgContainer {
+            height: auto; /* Adjust height to maintain aspect ratio */
+        }
+        .uniqueVideoBg {
+            min-width: 100%; /* Ensure the video covers the width */
+            min-height: auto; /* Adjust height to maintain aspect ratio */
+        }
+    }
+    
+    
+    .page__title {
+        margin-bottom: 1px; /* Adjust as needed */
+    }
+    
+    .content__box {
+        padding-bottom: 1px; /* Adjust as needed */
+    }
+    
+    .auto-container {
+        margin-bottom: 1px; /* Adjust as needed */
+    }
+    
+    .bg-layer {
+        /* Adjust padding or margin if necessary */
+    }
+    
+    .bread__crumb, .title {
+        margin-bottom: 1px; /* Adjust as needed */
+    }
+    
+    
+    
+    
+    .main-content.blurred {
+        filter: blur(5px);
+    }
+    
+    .popup {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        z-index: 1000; /* High z-index to be above other content */
+        
+    }
+    
+    
+    .popup-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .popup-inner {
+        display: flex;
+        align-items: start;
+    }
+    
+    .popup-image {
+        flex-basis: 40%; /* Adjust as needed */
+        margin-right: 20px; /* Space between image and text */
+        border-radius: 100px; 
+    }
+    
+    .popup-text {
+        flex-basis: 60%; /* Adjust as needed */
+    }
+    
+    
+    
+    .popup-content {
+        position: relative;
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 30px;
+        border-radius: 15px;
+        min-width: 300px; /* Minimum width */
+        max-width: 80%; /* Maximum width */
+        width: auto; 
+      
+        height: auto; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    }
+    
+    .close {
+         position: absolute;
+        top: 5px; /* Adjusted to account for added padding */
+        right: 10px; /* Adjusted to account for added padding */
+        font-size: 30px;
+        cursor: pointer;
+        padding: 15px; /* Adds padding around the '×', increasing the clickable area */
+        margin: -15px; /* Optional: offsets the added padding to maintain the original position */
+        background: transparent; /* Ensures the padding doesn't add a background color */
+        border: none;
+    
+         }
+    
+    
+    .popup-content h3 {
+        color: black; /* This sets the color of h3 headings to black */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        
+    }
+    
+    .popup-content p {
+        color: black; /* This sets the color of paragraphs to black */
+        margin-bottom: 10; 
+    }
+    
+    
+    
+    
+    .section-title {
+        margin-bottom: 75px; /* Adjust this value as needed for space below titles */
+        margin-top: 60px;
+    }
+    
+    .team__block {
+        margin-bottom: 30px; /* Consistent space between team blocks */
+    }
+    
+    /* Additional styling for responsive adjustments if needed */
+    @media (max-width: 767px) {
+        .section-title {
+            margin-bottom: 20px; /* Smaller space for mobile devices */
+        }
+    }
+    
+    
+    
+    .popup-image .homepage-link {
+        display: block; /* Ensures it takes its own line */
+        text-align: center; /* Center align the text */
+        margin-top: 10px; /* Space between the image and the text */
+        color: #007bff; /* Or any color you prefer for the link */
+        text-decoration: none; /* Optional: Removes underline */
+        font-weight: bold; /* Optional: Makes text bold */
+        border-radius: 10px; 
+    }
+    
+    .popup-image .homepage-link:hover {
+        text-decoration: underline; /* Optional: Underline on hover */
+        border-radius: 10px; 
+    }
+    .popup-image img {
+        border-radius: 10px; /* Adjust the border-radius to your preference */
+    }
+    /* Center the image vertically within the popup */
+    .popup-inner {
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .popup-text .role {
+        font-size: smaller; /* Smaller than the h3 size */
+        color: #6c757d; /* A lighter color; adjust as needed */
+        margin-top: 5px; /* Space above the role text */
+        /* Space below the role text */
+    }
+    
+    .team__role {
+        font-size: 13px; /* Smaller than the h3 size */
+        color: #6c757d; /* A lighter color, adjust as needed */
+        margin-top: 5px; /* Space above the role text */
+        /* Space below the role text */
+    }
+    
+    /* Style for the transparent cylinder */
+    /* Style for the smaller transparent cylinder */
+    .leadership-cylinder {
+        display: inline-block;
+        padding: 1px 4px;
+        background: rgba(0, 0, 255, 0.1); /* Transparent background color */
+        border: 1px solid #007bff; /* Baby blue outline */
+        border-radius: 100px; /* Rounded corners */
+        text-align: center;
+        
+        margin-bottom: 11px;
+        height: 20px; /* Adjust the height to make it shorter */
+        font-size: 7px;
+        line-height: 20px; /* Center the text vertically */
+    }
+    
+    /* Style for the text inside the cylinder */
+    .leadership-text {
+        color: #007bff; /* Baby blue text color */
+        font-weight: bold;
+        text-transform: uppercase; /* Uppercase text */
+    }
+    
+    
+    </style>
+    
+    <html lang="en">
+    <head>
+        <!-- Head content (like meta tags, title, link to CSS, etc.) goes here -->
+    </head>
+    <body>
+    
+  
+    
+    
+    
+    
+    <!-- Researcher Section -->
+    
+        <div class="row">
+            
+    <!-- Research Member 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupLeader1">
+            <div class="team__img">
+                <figure>
+                    <img src="assets/images/resource/team-09.jpg" alt="">
+                </figure>
+            </div>
+            <div class="team__name">
+                <h3>Dr. Pu Wang</h3>
+                <p class="team__role">Principal Investigator - Computer Science Professor</p>       </div>
+        </div>
+    </div>
+    <!-- Pop-up for Leadership Member 1 -->
+    <div id="popupLeader1" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="popup-inner">
+                <div class="popup-image">
+                    <a href="https://webpages.charlotte.edu/pwang13/" target="_blank">
+                        <img src="assets/images/resource/team-09.jpg" alt="Dr. Pu Wang">
+                    </a>
+                    <a href="https://webpages.charlotte.edu/pwang13/" class="homepage-link" target="_blank">HomePage</a> <!-- Added link -->
+                </div>
+                <div class="popup-text">
+                    <h3>Dr. Pu Wang</h3>
+                    <p class="role">Principal Investigator</p>
+                    <div class="leadership-cylinder">
+                        <span class="leadership-text">Leadership</span>
+                    </div>
+                    <p>Biography
+    
+                        Pu Wang received B.Eng degree in Electrical Engineering from Beijing Institute of Technology, China, in 2003, and M.Eng degree in Electrical and Computer Engineering from Memorial University of Newfoundland , Canada, in 2008. He received the Ph.D. degree in Electrical and Computer Engineering from the Georgia Institute of Technology, Atlanta, GA, in August 2013, under the guidance of Professor Ian F. Akyildiz.
+                        
+                        Currently, he is an Associate Professor with the Department of Computer Science at the University of North Carolina at Charlotte . Prior to joining UNCC, he was an assistant professor with Department of Electrical Engineering and Computer Science at Wichita State University from 2013 to 2017. His current research interests focus on deep learning and reinforcement learning, with applications in smart sensing, networking, computer vision, Internet of Things, and Cyber-Physical Systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Leadership Member 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupLeader2">
+            <div class="team__img">
+                <figure>
+                    <img src="assets/images/resource/team-03.jpg" alt="Dr. Ahmed Helmy">
+                </figure>
+            </div>
+            <div class="team__name">
+                <h3>Dr. Ahmed Helmy</h3>
+                <p class="team__role">Associate Dean for Research - Computer Science Department</p>      </div>
+        </div>
+    </div>
+    
+    <!-- Popup for Leadership Member 2 -->
+    <div id="popupLeader2" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="popup-inner">
+                <div class="popup-image">
+                    <a href="https://sites.google.com/uncc.edu/helmy/home" target="_blank">
+                        <img src="assets/images/resource/team-03.jpg" alt="Dr. Ahmed Helmy">
+                    </a>
+                    <a href="https://sites.google.com/uncc.edu/helmy/home" class="homepage-link" target="_blank">HomePage</a>
+                </div>
+                <div class="popup-text">
+                    <h3>Dr. Ahmed Helmy</h3>
+                    <p class="role">Associate Dean for Research</p>
+                    <div class="leadership-cylinder">
+                        <span class="leadership-text">Leadership</span>
+                    </div>
+                    <p>Dr. Ahmed Helmy is a distinguished academic with a rich background in computer science and electrical engineering. He holds a Ph.D. in Computer Science ('99) and an M.S. in Electrical Engineering ('95) from the University of Southern California (USC), as well as an M.S. in Engineering Mathematics ('94) and a B.S. in Electrical Engineering ('92) from Cairo University. Dr. Helmy played a significant role in developing the IP multicast Internet standard PIM and Network Simulator NS-2 at USC/ISI.
+    
+                        Currently, he serves as the Associate Dean for Research at the College of Computing & Informatics at the University of North Carolina, Charlotte. His previous positions include Professor and Graduate Director at the University of Florida's CISE Department and Professor in the EE Department at USC, where he established labs focused on Wireless Sensor Networks and Protocol Testing.
+                        
+                        Dr. Helmy's research encompasses wireless networks, mobility modeling, multicast protocols, and network simulation. He has led multiple NSF-funded projects and received grants from various organizations, including Intel, Cisco, and NASA. He has earned numerous awards, including the NSF CAREER Award, several best paper awards at prestigious ACM and IEEE conferences, and recognition as a Fellow of the IEEE and a Distinguished Scientist of the ACM.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Research Member 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff3">
+            <div class="team__img">
+                <figure>
+                    <img src="assets/images/resource/team-05.jpg" alt="Dr. Liyue Fan">
+                </figure>
+            </div>
+            <div class="team__name">
+                <h3>Dr. Liyue Fan</h3>
+                <p class="team__role">Computer Science Professor</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pop-up for Research Member 3 -->
+    <div id="popupStaff3" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="popup-inner">
+                <div class="popup-image">
+                    <a href="https://webpages.charlotte.edu/lfan4/index.html" target="_blank">
+                        <img src="assets/images/resource/team-05.jpg" alt="Dr. Liyue Fan">
+                    </a>
+                    <a href="https://webpages.charlotte.edu/lfan4/index.html" class="homepage-link" target="_blank">HomePage</a>
+                </div>
+                <div class="popup-text">
+                    <h3>Dr. Liyue Fan</h3>
+                    <p class="role">Senior Personnel - Computer Science Department</p>
+                    <div class="leadership-cylinder">
+                        <span class="leadership-text">Research</span>
+                    </div>
+                    <p>Dr. Liyue Fan is an Assistant Professor in Computer Science in the College of Computing and Informatics at the University of North Carolina at Charlotte. Her research is at the intersection of data privacy and spatio-temporal databases (see list of publications here). She was named one of the "Rising Stars in EECS" by MIT in 2015.
+    
+                        Prior to joining UNC Charlotte, Dr. Fan was an Assistant Professor in Information Technology Management at University at Albany. She spent two years as a postdoc research associate in the Integrated Media System Center at University of Southern California, under the supervision of Prof. Cyrus Shahabi. She received a Ph.D. in Computer Science & Informatics from Emory University (with Prof. Li Xiong) and a B.S.in Mathematics from Zhejiang University (a Chu Kochen ACEE alumna).
+                        
+                        Dr. Fan serves the professional community as a PC member for SIGMOD, KDD, ICDM, AAAI, SIGSPATIAL, etc., and as a reviewer for many high impact journals, such as TKDE, TIST, TIFS, TMC, DAPD, and Computer & Security.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Research Member 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff4">
+            <div class="team__img">
+                <figure>
+                    <img src="assets/images/resource/team-06.jpg" alt="Dr. Srijan Das">
+                </figure>
+            </div>
+            <div class="team__name">
+                <h3>Dr. Srijan Das</h3>
+                <p class="team__role">Computer Science Professor</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pop-up for Research Member 4 -->
+    <div id="popupStaff4" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="popup-inner">
+                <div class="popup-image">
+                    <a href="https://srijandas07.github.io/" target="_blank">
+                        <img src="assets/images/resource/team-06.jpg" alt="Dr. Srijan Das">
+                    </a>
+                    <a href="https://srijandas07.github.io/" class="homepage-link" target="_blank">HomePage</a>
+                </div>
+                <div class="popup-text">
+                    <h3>Dr. Srijan Das</h3>
+                    <p class="role">Senior Personnel - Computer Science Department</p>
+                    <div class="leadership-cylinder">
+                        <span class="leadership-text">Research</span>
+                    </div>
+                    <p>I am an Assistant Professor in the Department of Computer Science at the University of North Carolina at Charlotte. At UNC Charlotte, I am working on Video Representation Learning, and Robotic Vision. I am a member of the Charlotte Machine Learning Lab (CharMLab) at UNC Charlotte.
+    
+                        Before this, I was a Postdoctoral Associate at Stony Brook University under the supervision of Michael Ryoo. In 2020, I completed my Ph.D. in Computer Science at INRIA, Sophia Antipolis, France under the supervision of Francois Bremond and Monique Thonnat. My Ph.D. thesis is on ¨Spatio-temporal attention mechanisms for Action Recognition¨ and click here to watch my Defense Presentation. I did my Post-Grad in Computer Science from the National Institute of Technology (NIT), Rourkela.
+                        
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+ 
+    
+    
+   
+    
+    <!-- Repeat for other staff members -->
+    </div>
+    </div>
+    
+    <script>
+        // Your JavaScript code here
+    
+        // Example: Event listeners for .team__block
+        document.querySelectorAll('.team__block').forEach(item => {
+            item.addEventListener('click', function() {
+                var popupId = this.getAttribute('data-target');
+                document.querySelector(popupId).style.display = 'block';
+                // Additional code if needed...
+            });
+        });
+    
+        // Event listeners for .close buttons in popups
+        document.querySelectorAll('.close').forEach(item => {
+            item.addEventListener('click', function() {
+                this.closest('.popup').style.display = 'none';
+                // Additional code if needed...
+            });
+        });
+    
+        // ... other JavaScript code ...
+    
+    </script>
+    
+    </body>
+    </html>
