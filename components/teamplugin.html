@@ -235,6 +235,7 @@
 .popup-image {
     flex-basis: 40%; /* Adjust as needed */
     margin-right: 20px; /* Space between image and text */
+    border-radius: 100px; 
 }
 
 .popup-text {
@@ -277,11 +278,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
-    margin-bottom: 2; 
+    
 }
 
 .popup-content p {
     color: black; /* This sets the color of paragraphs to black */
+    margin-bottom: 10; 
 }
 
 
@@ -312,24 +314,58 @@
     color: #007bff; /* Or any color you prefer for the link */
     text-decoration: none; /* Optional: Removes underline */
     font-weight: bold; /* Optional: Makes text bold */
+    border-radius: 10px; 
 }
 
 .popup-image .homepage-link:hover {
     text-decoration: underline; /* Optional: Underline on hover */
+    border-radius: 10px; 
 }
+.popup-image img {
+    border-radius: 10px; /* Adjust the border-radius to your preference */
+}
+/* Center the image vertically within the popup */
+.popup-inner {
+    display: flex;
+    align-items: center;
+}
+
 
 .popup-text .role {
     font-size: smaller; /* Smaller than the h3 size */
     color: #6c757d; /* A lighter color; adjust as needed */
     margin-top: 5px; /* Space above the role text */
-    margin-bottom: 10px; /* Space below the role text */
+    /* Space below the role text */
 }
 
 .team__role {
     font-size: 13px; /* Smaller than the h3 size */
     color: #6c757d; /* A lighter color, adjust as needed */
     margin-top: 5px; /* Space above the role text */
-    margin-bottom: 10px; /* Space below the role text */
+    /* Space below the role text */
+}
+
+/* Style for the transparent cylinder */
+/* Style for the smaller transparent cylinder */
+.leadership-cylinder {
+    display: inline-block;
+    padding: 1px 4px;
+    background: rgba(0, 0, 255, 0.1); /* Transparent background color */
+    border: 1px solid #007bff; /* Baby blue outline */
+    border-radius: 100px; /* Rounded corners */
+    text-align: center;
+    
+    margin-bottom: 11px;
+    height: 20px; /* Adjust the height to make it shorter */
+    font-size: 7px;
+    line-height: 20px; /* Center the text vertically */
+}
+
+/* Style for the text inside the cylinder */
+.leadership-text {
+    color: #007bff; /* Baby blue text color */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text */
 }
 
 
@@ -360,7 +396,7 @@
         </div>
         <div class="team__name">
             <h3>Dr. Pu Wang</h3>
-        </div>
+            <p class="team__role">Professor and Chair of Computer Science</p>       </div>
     </div>
 </div>
 <!-- Pop-up for Leadership Member 1 -->
@@ -377,6 +413,9 @@
             <div class="popup-text">
                 <h3>Dr. Pu Wang</h3>
                 <p class="role">Principal Investigator</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Leadership</span>
+                </div>
                 <p>Biography
 
                     Pu Wang received B.Eng degree in Electrical Engineering from Beijing Institute of Technology, China, in 2003, and M.Eng degree in Electrical and Computer Engineering from Memorial University of Newfoundland , Canada, in 2008. He received the Ph.D. degree in Electrical and Computer Engineering from the Georgia Institute of Technology, Atlanta, GA, in August 2013, under the guidance of Professor Ian F. Akyildiz.
@@ -399,7 +438,7 @@
         </div>
         <div class="team__name">
             <h3>Dr. Ahmed Helmy</h3>
-        </div>
+            <p class="team__role">Professor and Chair of Computer Science</p>      </div>
     </div>
 </div>
 
@@ -417,6 +456,9 @@
             <div class="popup-text">
                 <h3>Dr. Ahmed Helmy</h3>
                 <p class="role">Associate Dean for Research</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Leadership</span>
+                </div>
                 <p>Dr. Ahmed Helmy is a distinguished academic with a rich background in computer science and electrical engineering. He holds a Ph.D. in Computer Science ('99) and an M.S. in Electrical Engineering ('95) from the University of Southern California (USC), as well as an M.S. in Engineering Mathematics ('94) and a B.S. in Electrical Engineering ('92) from Cairo University. Dr. Helmy played a significant role in developing the IP multicast Internet standard PIM and Network Simulator NS-2 at USC/ISI.
 
                     Currently, he serves as the Associate Dean for Research at the College of Computing & Informatics at the University of North Carolina, Charlotte. His previous positions include Professor and Graduate Director at the University of Florida's CISE Department and Professor in the EE Department at USC, where he established labs focused on Wireless Sensor Networks and Protocol Testing.
@@ -466,6 +508,9 @@
             <div class="popup-text">
                 <h3>Dr. Minwoo Lee</h3>
                 <p class="role">Senior Personnel - Computer Science Department </p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Dr. Minwoo Lee is a professor in the Department of Computer Science, University of North Carolina Charlotte. He is working on machine learning algorithms for reinforcement learning. His interests focus on various topics in machine learning, with an emphasis on reinforcement learning, such as interpretational learning, transfer learning, sparse learning, multiagent learning, fine control-based policy development, and robust knowledge augmentation. Recent research focuses on the analysis of learning behavior with sparse Bayesian learning.</p>
             </div>
         </div>
@@ -503,6 +548,9 @@
             <div class="popup-text">
                 <h3>Dr. Min Shin</h3>
                 <p class="role">Senior Personnel - Computer Science Department</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Min C. Shin (Ph.D., Computer Science, University of South Florida, 2001) is a Professor of Computer Science and the Assistant Dean for Research in the College of Computing and Informatics at UNC Charlotte. His research interests are in Computer Vision, with a focus on multiple object tracking. He has had multiple successful NSF, NIH, DARPA, and industry grants to develop tracking algorithms and user-friendly software for several systems (ants, bees, cells, termites, robots, people, cars).  His current NSF project is funding deployment of a highly usable application based on his group’s 10+ years of multiple object tracking work (www.abctracker.org). He has mentored two Ph.D. students (one faculty and one at industry research), and is currently mentoring two Ph.D. students including one female student. He has been regularly mentoring multiple undergraduate research students for past 18 years. He has been serving as an Associate Editor for IEEE Transactions on Systems, Man, and Cybernetics-B and on the program committees of major computer vision conferences including ICCV, CVPR, ECCV.</p>
             </div>
         </div>
@@ -539,6 +587,9 @@
             <div class="popup-text">
                 <h3>Dr. Liyue Fan</h3>
                 <p class="role">Senior Personnel - Computer Science Department</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Dr. Liyue Fan is an Assistant Professor in Computer Science in the College of Computing and Informatics at the University of North Carolina at Charlotte. Her research is at the intersection of data privacy and spatio-temporal databases (see list of publications here). She was named one of the "Rising Stars in EECS" by MIT in 2015.
 
                     Prior to joining UNC Charlotte, Dr. Fan was an Assistant Professor in Information Technology Management at University at Albany. She spent two years as a postdoc research associate in the Integrated Media System Center at University of Southern California, under the supervision of Prof. Cyrus Shahabi. She received a Ph.D. in Computer Science & Informatics from Emory University (with Prof. Li Xiong) and a B.S.in Mathematics from Zhejiang University (a Chu Kochen ACEE alumna).
@@ -579,6 +630,9 @@
             <div class="popup-text">
                 <h3>Dr. Srijan Das</h3>
                 <p class="role">Senior Personnel - Computer Science Department</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>I am an Assistant Professor in the Department of Computer Science at the University of North Carolina at Charlotte. At UNC Charlotte, I am working on Video Representation Learning, and Robotic Vision. I am a member of the Charlotte Machine Learning Lab (CharMLab) at UNC Charlotte.
 
                     Before this, I was a Postdoctoral Associate at Stony Brook University under the supervision of Michael Ryoo. In 2020, I completed my Ph.D. in Computer Science at INRIA, Sophia Antipolis, France under the supervision of Francois Bremond and Monique Thonnat. My Ph.D. thesis is on ¨Spatio-temporal attention mechanisms for Action Recognition¨ and click here to watch my Defense Presentation. I did my Post-Grad in Computer Science from the National Institute of Technology (NIT), Rourkela.
@@ -621,6 +675,9 @@
             <div class="popup-text">
                 <h3>Dr. Razvan Bunescu</h3>
                 <p class="role">Senior Personnel - Computer Science Department</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Dr. Razvan C. Bunescu is a highly accomplished computer scientist with a strong educational background, holding a Ph.D. in Computer Science from the University of Texas at Austin (2007), and both an M.S. and B.S. in Computer Science from the University Politehnica of Bucharest (1999, 1998). His primary research interests span across machine learning, natural language processing, and music information retrieval. Dr. Bunescu is actively involved in seeking motivated Ph.D. students with proficient programming skills to join his research endeavors in these areas.</p>
             </div>
         </div>
@@ -633,7 +690,7 @@
     <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff6">
         <div class="team__img">
             <figure>
-                <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                <img src="assets/images/resource/team-10.png" alt="Dr. Razvan Bunescu">
             </figure>
         </div>
         <div class="team__name">
@@ -650,13 +707,16 @@
         <div class="popup-inner">
             <div class="popup-image">
                 <a href="https://webpages.charlotte.edu/rbunescu/" target="_blank">
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-10.png" alt="Dr. Razvan Bunescu">
                 </a>
                 <a href="https://xiangzhang.info/index.html" class="homepage-link" target="_blank">HomePage</a>
             </div>
             <div class="popup-text">
                 <h3> Dr. Xiang Zhang</h3>
                 <p class="role">Senior Personnel - Computer Science Department</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Xiang is an Assistant Professor in the Department of Computer Science at the University of North Carolina (UNC) at Charlotte. Before joining UNC Charlotte, he was a postdoctoral fellow at Harvard University from March 2020 to July 2022. Xiang received his Ph.D. degree (in 2020) in Computer Science from the University of New South Wales (UNSW). His research interests lie in data mining and machine learning with applications in pervasive healthcare, medical time series, and Brain-Computer Interfaces (BCIs). Xiang's research outcomes have been published in prestigious conferences (such as ICLR, NeurIPS, and KDD) and journals (like Nature Computational Science).
 
                 </p>
@@ -670,7 +730,7 @@
     <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff7">
         <div class="team__img">
             <figure>
-                <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                <img src="assets/images/resource/team-11.png" alt="Dr. Razvan Bunescu">
             </figure>
         </div>
         <div class="team__name">
@@ -687,13 +747,16 @@
         <div class="popup-inner">
             <div class="popup-image">
                 <a href="https://webpages.charlotte.edu/rbunescu/" target="_blank">
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-11.png" alt="Dr. Razvan Bunescu">
                 </a>
                 <a href="https://webpages.charlotte.edu/alu1/" class="homepage-link" target="_blank">HomePage</a>
             </div>
             <div class="popup-text">
                 <h3> Dr. Aidong Lu</h3>
                 <p class="role">Senior Personnel - Computer Science Department</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Dr. Aidong Lu is a distinguished Professor in the Department of Computer Science at the University of North Carolina at Charlotte. With a focus on Data Visualization and Mixed Reality, Dr. Lu's work revolves around immersive analytics, offering innovative approaches to visualizing complex data. She is keenly interested in applications that span across social network analysis, augmented and virtual reality, 3D interactions, and gaming analytics. Her commitment to education is evident in her active engagement with both undergraduate and graduate students, encouraging them to participate in visualization courses and lab projects. Dr. Lu’s lab is equipped with diverse devices, facilitating hands-on learning experiences in these fields.</p>
             </div>
         </div>
@@ -706,7 +769,7 @@
     <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff8">
         <div class="team__img">
             <figure>
-                <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                <img src="assets/images/resource/team-12.png" alt="Dr. Razvan Bunescu">
             </figure>
         </div>
         <div class="team__name">
@@ -723,13 +786,16 @@
         <div class="popup-inner">
             <div class="popup-image">
                 <a href="https://webpages.charlotte.edu/ddai/" target="_blank">
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-12.png" alt="Dr. Razvan Bunescu">
                 </a>
                 <a href="https://webpages.charlotte.edu/ddai/" class="homepage-link" target="_blank">HomePage</a>
             </div>
             <div class="popup-text">
                 <h3>  Dr. Dong Dai</h3>
                 <p class="role">Senior Personnel - Computer Science Department</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>I am an Assitant Professor at University of North Carolina at Charlotte in Computer Science Department, where I work on Data-intensive and High-performance systems.
 
                     I work in optimizing and designing intelligent infrastructure for high-performance data-intensive systems, such as parallel file systems, metadata management, graph storage, and resource management.
@@ -777,6 +843,9 @@
             <div class="popup-text">
                 <h3>Dr. Srinivas Akella</h3>
                 <p class="role">Senior Personnel - Computer Science Department</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>
                     Srinivas Akella is a researcher specializing in diverse fields within robotics and automation. His work includes developing algorithms for coordinating multiple robots, enabling collision-free interactions in shared workspaces, as well as optimizing digital microfluidic systems for efficient biochemical analysis. Akella also focuses on proximity queries between convex objects and dynamic simulations of multibody systems with intermittent contact, contributing to precise and reliable modeling of complex mechanical systems. Furthermore, he explores articulated 3-D structures and protein folding pathways, showcasing his broad expertise in the robotics and computational geometry domains.</p>
             </div>
@@ -790,7 +859,7 @@
     <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff14">
         <div class="team__img">
             <figure>
-                <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                <img src="assets/images/resource/team-15.png" alt="Dr. Razvan Bunescu">
             </figure>
         </div>
         <div class="team__name">
@@ -807,13 +876,16 @@
         <div class="popup-inner">
             <div class="popup-image">
                 <a href="https://webpages.charlotte.edu/wluo4/" target="_blank">
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-15.png" alt="Dr. Razvan Bunescu">
                 </a>
                 <a href="https://webpages.charlotte.edu/wluo4/" class="homepage-link" target="_blank">HomePage</a>
             </div>
             <div class="popup-text">
                 <h3>Dr. Wenhao Luo</h3>
                 <p class="role">Senior Personnel - Computer Science Department</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Dr. Wenhao Luo is an Assistant Professor in Computer Science at UNC Charlotte. His research interests are at the intersection of robotics, control theory, artificial intelligence, and machine learning. Specifically, Dr. Luo’s research focuses on principled methods for robust and interactive autonomy that enable robots to safely and effectively collaborate with each other and with humans in the physical world. His recent work has focused on learning and control for safe autonomous multi-robot systems, with emphasis on robustness, resilience, and adversaries in the systems. He received MS and PhD degrees in Robotics from Carnegie Mellon University, and his B.E. degree with honors in Measurement & Control Technology and Instruments from Central South University, China. He was a research intern at Microsoft Research in the summer of 2019 and 2020. His work has been supported by NSF, USDA, DARPA, ONR, and AFOSR.</p>
             </div>
         </div>
@@ -827,7 +899,7 @@
     <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff15">
         <div class="team__img">
             <figure>
-                <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                <img src="assets/images/resource/team-14.png" alt="Dr. Razvan Bunescu">
             </figure>
         </div>
         <div class="team__name">
@@ -844,13 +916,16 @@
         <div class="popup-inner">
             <div class="popup-image">
                 <a href="https://cci-hit.charlotte.edu/" target="_blank">
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-14.png" alt="Dr. Razvan Bunescu">
                 </a>
                 <a href="https://cci-hit.charlotte.edu/" class="homepage-link" target="_blank">HomePage</a>
             </div>
             <div class="popup-text">
                 <h3>Dr. Yaorong Ge</h3>
                 <p class="role">Senior Personnel - Department of Software and Information Systems</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Yaorong Ge, Ph,D., comes to the Department of Software and Information Systems as a tenured Associate Professor after serving as an Associate Professor in the Department of Biomedical Engineering and the Center of Biomedical Informatics at Wake Forest University Health Sciences (WFUHS). He received his Ph.D. in Computer Science-Medical Engineering from Vanderbilt University (1995). Dr. Ge has extensive experience in imaging informatics and medical informatics. He was a part of the virtual colonoscopy research group that initiated and advanced the development of virtual colonoscopy, a minimally invasive technology for colorectal cancer screening. His expertise in imaging includes image registration, segmentation, skeletonization, computer-aided diagnosis, and radiology structured reporting. Dr. Ge also has strong experience in industry-strength software development. He co-founded and managed a medical software company to commercialize virtual colonoscopy and radiology structured reporting technologies. As Chief Technology Officer of the company, he established rigorous software engineering processes and a strong engineering team that produced state-of-the-art, FDA cleared imaging information systems, as well as a clinical ontology for radiology reporting. After the startup was acquired by IDX Corporation, an industry leader in healthcare IT before being merged into GE Healthcare, he became the Director of the software development team of IDX’s radiology information system division.</p>
             </div>
         </div>
@@ -864,7 +939,7 @@
     <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff16">
         <div class="team__img">
             <figure>
-                <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                <img src="assets/images/resource/team-13.png" alt="Dr. Razvan Bunescu">
             </figure>
         </div>
         <div class="team__name">
@@ -884,13 +959,16 @@
         <div class="popup-inner">
             <div class="popup-image">
                 <a href="https://pages.charlotte.edu/afenwick/" target="_blank">
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-13.png" alt="Dr. Razvan Bunescu">
                 </a>
                 <a href="https://pages.charlotte.edu/afenwick/" class="homepage-link" target="_blank">HomePage</a>
             </div>
             <div class="popup-text">
                 <h3>Dr. Abbey Fenwick</h3>
                 <p class="role">Senior Personnel - Department of Applied Physiology, Health, and Clinical Sciences </p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Dr. Abbey Thomas (Abbey Fenwick) is an Assistant Professor in Kinesiology at UNC Charlotte. She teaches in the undergraduate Athletic Training Education Program and advises graduate students in the Applied Physiology and Neuromechanics program. Her research focuses on the long-term consequences of knee injury, particularly as it involves post-traumatic osteoarthritis development and treatment. She is currently a member of the executive committee for the Athletic Trainers’ Osteoarthritis Consortium.</p>
             </div>
         </div>
@@ -905,7 +983,7 @@
         <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff17">
             <div class="team__img">
                 <figure>
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-18.png" alt="Dr. Razvan Bunescu">
                 </figure>
             </div>
             <div class="team__name">
@@ -923,13 +1001,16 @@
             <div class="popup-inner">
                 <div class="popup-image">
                     <a href="https://pages.charlotte.edu/jmarin10/" target="_blank">
-                        <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                        <img src="assets/images/resource/team-18.png" alt="Dr. Razvan Bunescu">
                     </a>
                     <a href="https://pages.charlotte.edu/jmarin10/" class="homepage-link" target="_blank">HomePage</a>
                 </div>
                 <div class="popup-text">
                     <h3>Dr. Joseph S. Marino</h3>
                     <p class="role">Senior Personnel - Department of Applied Physiology, Health, and Clinical Sciences </p>
+                    <div class="leadership-cylinder">
+                        <span class="leadership-text">Research</span>
+                    </div>
                     <p>Dr. Joseph S. Marino leads the Marino lab, a research group dedicated to advancing our knowledge of skeletal muscle mass and metabolism regulation to enhance sports performance. As the Departmental Research Project Director for the U.S. Performance Center, Dr. Marino collaborates with National and Olympic-level athletes. His current research areas encompass investigating the impact of sport specialization on long-term athlete development, identifying risk factors related to the female athlete triad, studying the effects of sleep disturbances on athletic performance and health, and exploring resistance training adaptations in healthy and diseased skeletal muscle. Dr. Marino holds multiple degrees, including a Ph.D. in Applied Physiology, and has published numerous peer-reviewed articles on topics ranging from diabetes to muscle physiology. He has received grants to support his research and has been recognized with awards for his contributions to academia and mentoring. Dr. Marino is also involved in community engagement and serves as a representative for the College of Health and Human Services at the National Science Festival.</p>
                 </div>
             </div>
@@ -942,7 +1023,7 @@
         <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff18">
             <div class="team__img">
                 <figure>
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-17.png" alt="Dr. Razvan Bunescu">
                 </figure>
             </div>
             <div class="team__name">
@@ -960,13 +1041,16 @@
             <div class="popup-inner">
                 <div class="popup-image">
                     <a href="https://pages.uncc.edu/ldonova2" target="_blank">
-                        <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                        <img src="assets/images/resource/team-17.png" alt="Dr. Razvan Bunescu">
                     </a>
                     <a href="https://pages.uncc.edu/ldonova2" class="homepage-link" target="_blank">HomePage</a>
                 </div>
                 <div class="popup-text">
                     <h3>Dr. Luke Donovan</h3>
                     <p class="role">Senior Personnel - Department of Applied Physiology, Health, and Clinical Sciences</p>
+                    <div class="leadership-cylinder">
+                        <span class="leadership-text">Research</span>
+                    </div>
                     <p>Dr. Luke Donovan is an Associate Professor in the Department of Applied Physiology, Health, and Clinical Sciences at the University of North Carolina at Charlotte. Prior to coming to UNC-Charlotte, he was an Assistant Professor at the University of Toledo and served as the Director of the CAATE-accredited Post-Professional Graduate Athletic Training program. Currently, Dr. Donovan teaches within the undergraduate Athletic Training and Exercise Science Programs and advises students within the Interdisciplinary Biology PhD Program. Dr. Donovan’s research interests includes the utilization of an impairment-based rehabilitation model for the treatment of chronic ankle instability, in which he is further refining the model by studying novel assessment and rehabilitation techniques.</p>
                 </div>
             </div>
@@ -980,7 +1064,7 @@
         <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff19">
             <div class="team__img">
                 <figure>
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-16.png" alt="Dr. Razvan Bunescu">
                 </figure>
             </div>
             <div class="team__name">
@@ -998,13 +1082,16 @@
             <div class="popup-inner">
                 <div class="popup-image">
                     <a href="https://nursing.charlotte.edu/directory/kelly-powers-phd-rn-cne/" target="_blank">
-                        <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                        <img src="assets/images/resource/team-16.png" alt="Dr. Razvan Bunescu">
                     </a>
                     <a href="https://nursing.charlotte.edu/directory/kelly-powers-phd-rn-cne/" class="homepage-link" target="_blank">HomePage</a>
                 </div>
                 <div class="popup-text">
                     <h3>Dr. Kelly Powers</h3>
                     <p class="role">Senior Personnel - School of Nursing</p>
+                    <div class="leadership-cylinder">
+                        <span class="leadership-text">Research</span>
+                    </div>
                     <p>Dr. Kelly Powers, PhD, RN, CNE is an Associate Professor in the School of Nursing at UNC Charlotte. She has been a faculty member at UNC Charlotte since 2008 and has taught in the BSN, MSN, and DNP programs. Dr. Powers creates innovative simulations for the BSN program, and mentors BSN Honors students to conduct scholarly projects to advance clinical practice. Her current courses are focused on teaching and mentoring DNP students to conduct scholarly projects, preparing MSN students for the nurse educator role, and advancing graduate students’ interprofessional collaboration competencies. She created and teaches an interprofessional education (IPE) course for graduate students in nursing, social work, and other programs within the College of Health and Human Services. As a member of the steering committee of the North Carolina Interprofessional Education Leaders Collaborative (NC-IPELC), Dr. Powers collaborates with other IPE leaders across the state to advance interprofessional collaborative practice.</p>
                 </div>
             </div>
@@ -1016,7 +1103,7 @@
         <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff20">
             <div class="team__img">
                 <figure>
-                    <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                    <img src="assets/images/resource/team-19.png" alt="Dr. Razvan Bunescu">
                 </figure>
             </div>
             <div class="team__name">
@@ -1037,13 +1124,16 @@
             <div class="popup-inner">
                 <div class="popup-image">
                     <a href="https://nursing.charlotte.edu/directory/meredith-troutman-jordan-phd-pmhcns-bc/" target="_blank">
-                        <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                        <img src="assets/images/resource/team-19.png" alt="Dr. Razvan Bunescu">
                     </a>
                     <a href="https://nursing.charlotte.edu/directory/meredith-troutman-jordan-phd-pmhcns-bc/" class="homepage-link" target="_blank">HomePage</a>
                 </div>
                 <div class="popup-text">
                     <h3>Dr. Meredith Troutman-Jordan</h3>
                     <p class="role">Senior Personnel - School of Nursing</p>
+                    <div class="leadership-cylinder">
+                        <span class="leadership-text">Research</span>
+                    </div>
                     <p>Meredith Troutman-Jordan, PhD, PMHCNS-BC a American Nurses Credentialing Center certified psychiatric mental health clinical nurse specialist, and my clinical experience includes work in inpatient, outpatient, and residential psychiatric mental health and substance abuse treatment, and home health.  She has worked primarily with older adults for the past 20 years.</p>
                 </div>
             </div>
@@ -1056,7 +1146,7 @@
             <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff21">
                 <div class="team__img">
                     <figure>
-                        <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                        <img src="assets/images/resource/team-20.png" alt="Dr. Razvan Bunescu">
                     </figure>
                 </div>
                 <div class="team__name">
@@ -1067,20 +1157,23 @@
             </div>
         </div>
         
-        <!-- Pop-up for Research Member 13 -->
+        <!-- Pop-up for Research Member 21 -->
         <div id="popupStaff21" class="popup">
             <div class="popup-content">
                 <span class="close">&times;</span>
                 <div class="popup-inner">
                     <div class="popup-image">
                         <a href="https://coefs.charlotte.edu/nzheng/" target="_blank">
-                            <img src="assets/images/resource/team-07.jpg" alt="Dr. Razvan Bunescu">
+                            <img src="assets/images/resource/team-20.png" alt="Dr. Razvan Bunescu">
                         </a>
                         <a href="https://coefs.charlotte.edu/nzheng/" class="homepage-link" target="_blank">HomePage</a>
                     </div>
                     <div class="popup-text">
                         <h3>Dr. Naiquan (Nigel) Zheng</h3>
                         <p class="role">Senior Personnel - Department of Mechanical Engineering and Engineering Science</p>
+                        <div class="leadership-cylinder">
+                            <span class="leadership-text">Research</span>
+                        </div>
                         <p>Professor, Mechanical Engineering and Engineering Science
                             Associate and BMR Focus Area Leader, Center for Biomedical Engineering and Science
                             Associate, Gerontology Program
@@ -1137,6 +1230,9 @@
             <div class="popup-text">
                 <h3>Issam Alzouby</h3>
                 <p class="role">Research Assistant</p>
+                <div class="leadership-cylinder">
+                    <span class="leadership-text">Research</span>
+                </div>
                 <p>Issam Alzouby is a Tech Enthusiast and CyberSecurity Student at the University of North Carolina at Charlotte. He has actively participated in innovative projects, including a NASA hackathon where he worked on space-related data analysis. Issam has also demonstrated his technical skills by developing a website and engaging in a drone-building project. His academic pursuits are complemented by his role as an Ai Research Assistant, where he contributes to research and development in the field of artificial intelligence. Additionally, Issam has entrepreneurial experience as the owner of iRepairCLT, where he and his team have successfully reverse-engineered proprietary ASIC boards, showcasing their technical prowess and problem-solving capabilities. Furthermore, Issam has enriched his practical knowledge in the field by working as a Cyber Analyst Intern, gaining hands-on experience in analyzing and securing digital information. Issam’s commitment to technology and research is evident through his various projects and roles.</p>
             </div>
         </div>
