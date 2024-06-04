@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video Background</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     .rounded-shadow {
       border-radius: 20px;
@@ -32,9 +34,32 @@
       border-radius: 15px; /* Rounded edges */
     }
 
-    /* Add this CSS rule to remove the outline */
     .videoContainer video:focus {
       outline: none;
+    }
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 10px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .controls button {
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .videoContainer:hover .controls {
+      opacity: 1;
     }
 
     body {
@@ -50,16 +75,19 @@
           <source src="assets/images/banner/banner-bg.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
+        <div class="controls">
+          <button id="pauseButton"><i class="fas fa-pause"></i></button>
+          <button id="muteButton"><i class="fas fa-volume-mute"></i></button>
+        </div>
       </div>
     </div>
   </div>
 
   <script>
-    // Get the video element by its class
+    // Get the video element and buttons
     var video = document.querySelector('.uniqueVideoBg');
-
-    // Play the video (added this line to start video playback)
-    playVideo();
+    var pauseButton = document.getElementById('pauseButton');
+    var muteButton = document.getElementById('muteButton');
 
     // Play the video
     function playVideo() {
@@ -74,14 +102,21 @@
     // Mute/Unmute the video
     function toggleMute() {
       video.muted = !video.muted;
+      muteButton.innerHTML = video.muted ? '<i class="fas fa-volume-up"></i>' : '<i class="fas fa-volume-mute"></i>';
     }
 
-    // Add event listeners for hover to pause/play the video
-    video.addEventListener('mouseover', pauseVideo);
-    video.addEventListener('mouseout', playVideo);
+    // Add event listeners for the buttons
+    pauseButton.addEventListener('click', function() {
+      if (video.paused) {
+        playVideo();
+        pauseButton.innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        pauseVideo();
+        pauseButton.innerHTML = '<i class="fas fa-play"></i>';
+      }
+    });
 
-    // Add event listener for click to mute/unmute the video
-    video.addEventListener('click', toggleMute);
+    muteButton.addEventListener('click', toggleMute);
 
     // Your existing JavaScript code for popups
     document.querySelectorAll('.team__block').forEach(item => {
@@ -101,4 +136,3 @@
   </script>
 </body>
 </html>
-
