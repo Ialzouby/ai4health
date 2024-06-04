@@ -287,7 +287,10 @@ Copyright (c) 2015 Daniel Eden
   20% {
     -webkit-transform: rotate3d(0, 0, 1, 15deg);
     transform: rotate3d(0, 0, 1, 15deg);
-  }
+    -moz-transform: rotate3d(0, 0, 1, 15deg);
+    -ms-transform: rotate3d(0, 0, 1, 15deg);
+    -o-transform: rotate3d(0, 0, 1, 15deg);
+}
 
   40% {
     -webkit-transform: rotate3d(0, 0, 1, -10deg);
