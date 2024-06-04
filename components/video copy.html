@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Background</title>
-  <style>
+<style>
     .rounded-shadow {
       border-radius: 20px;
       box-shadow: 0px 4px 8px rgba(0, 0, 139, 0.6);
@@ -14,14 +8,14 @@
       display: block;
       border: none; /* Remove the border */
     }
-
+  
     .videoContainer {
       width: 100%; /* Adjust the width as needed */
       padding-top: 56.25%; /* 16:9 aspect ratio */
       overflow: hidden;
       position: relative;
     }
-
+  
     .uniqueVideoBg {
       position: absolute;
       top: 0;
@@ -31,58 +25,46 @@
       object-fit: cover; /* Use "cover" to maintain aspect ratio and fill the container */
       border-radius: 15px; /* Rounded edges */
     }
-
+  
     /* Add this CSS rule to remove the outline */
     .videoContainer video:focus {
       outline: none;
     }
-
+  
     body {
       overflow-x: hidden;
     }
   </style>
-</head>
-<body>
+  
   <div class="videoWrapper">
     <div class="rounded-shadow">
       <div class="videoContainer">
-        <video class="uniqueVideoBg" autoplay loop playsinline>
+        <video class="uniqueVideoBg" autoplay loop playsinline muted>
           <source src="assets/images/banner/banner-bg.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
     </div>
-  </div>
+</div>
 
+  
   <script>
-    // Get the video element by its class
+    // Get the video element by its ID
     var video = document.querySelector('.uniqueVideoBg');
-
+  
     // Play the video (added this line to start video playback)
     playVideo();
-
+  
     // Play the video
     function playVideo() {
       video.play();
     }
-
+  
     // Pause the video
     function pauseVideo() {
       video.pause();
     }
-
-    // Mute/Unmute the video
-    function toggleMute() {
-      video.muted = !video.muted;
-    }
-
-    // Add event listeners for hover to pause/play the video
-    video.addEventListener('mouseover', pauseVideo);
-    video.addEventListener('mouseout', playVideo);
-
-    // Add event listener for click to mute/unmute the video
-    video.addEventListener('click', toggleMute);
-
+  
     // Your existing JavaScript code for popups
     document.querySelectorAll('.team__block').forEach(item => {
       item.addEventListener('click', function() {
@@ -91,7 +73,7 @@
         document.querySelector('.team__page').classList.add('blurred');
       });
     });
-
+  
     document.querySelectorAll('.close').forEach(item => {
       item.addEventListener('click', function() {
         this.closest('.popup').style.display = 'none';
@@ -99,6 +81,4 @@
       });
     });
   </script>
-</body>
-</html>
-
+  
