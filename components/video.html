@@ -50,13 +50,20 @@
     }
 
     .controls button {
-      background: rgba(0, 0, 0, 0.5);
-      border: none;
-      color: white;
-      padding: 10px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  width: 50px; /* Set width */
+  height: 50px; /* Set height */
+  border-radius: 50%; /* Make it round */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px; /* Adjust icon size if needed */
+  padding: 0; /* Remove padding */
+}
+
 
     .videoContainer:hover .controls {
       opacity: 1;
@@ -89,34 +96,35 @@
     var pauseButton = document.getElementById('pauseButton');
     var muteButton = document.getElementById('muteButton');
 
-    // Play the video
-    function playVideo() {
-      video.play();
-    }
+// Play the video
+function playVideo() {
+  video.play();
+}
 
-    // Pause the video
-    function pauseVideo() {
-      video.pause();
-    }
+// Pause the video
+function pauseVideo() {
+  video.pause();
+}
 
-    // Mute/Unmute the video
-    function toggleMute() {
-      video.muted = !video.muted;
-      muteButton.innerHTML = video.muted ? '<i class="fas fa-volume-up"></i>' : '<i class="fas fa-volume-mute"></i>';
-    }
+// Mute/Unmute the video
+function toggleMute() {
+  video.muted = !video.muted;
+  muteButton.innerHTML = video.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
+}
 
-    // Add event listeners for the buttons
-    pauseButton.addEventListener('click', function() {
-      if (video.paused) {
-        playVideo();
-        pauseButton.innerHTML = '<i class="fas fa-pause"></i>';
-      } else {
-        pauseVideo();
-        pauseButton.innerHTML = '<i class="fas fa-play"></i>';
-      }
-    });
+// Add event listeners for the buttons
+pauseButton.addEventListener('click', function() {
+  if (video.paused) {
+    playVideo();
+    pauseButton.innerHTML = '<i class="fas fa-pause"></i>';
+  } else {
+    pauseVideo();
+    pauseButton.innerHTML = '<i class="fas fa-play"></i>';
+  }
+});
 
-    muteButton.addEventListener('click', toggleMute);
+muteButton.addEventListener('click', toggleMute);
+
 
     // Your existing JavaScript code for popups
     document.querySelectorAll('.team__block').forEach(item => {
