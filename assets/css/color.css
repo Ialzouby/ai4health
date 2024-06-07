@@ -7,8 +7,8 @@
 	background: -webkit-linear-gradient(0deg, #41a0ea, #f18e95 75%);
 }
 .theme-btn-one {
-	background: linear-gradient(219deg, #97e4ff 0%, #910694 100%);
+	background: linear-gradient(219deg, #97e4ff 0%, #00703c 100%);
 }
 .theme-btn-one:before {
-    background: linear-gradient(219deg, #97e4ff 0%, #910694 100%);
+    background: linear-gradient(219deg, #97e4ff 0%, #00703c 100%);
 }
