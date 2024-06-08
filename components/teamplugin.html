@@ -69,6 +69,13 @@
         .team__block {
             text-align: center;
         }
+
+        .team__block2:hover .team__img:before {
+            background: #4F502C;
+        }
+        .team__block2 {
+            text-align: center;
+        }
         .team__name {
             padding: 20px 0px 10px;
         }
@@ -289,6 +296,10 @@
             margin-bottom: 30px; /* Consistent space between team blocks */
         }
         
+        .team__block2 {
+            margin-bottom: 30px; /* Consistent space between team blocks */
+        }
+
         @media (max-width: 767px) {
             .section-title {
                 margin-bottom: 20px; /* Smaller space for mobile devices */
@@ -1286,6 +1297,16 @@
             // Additional code if needed...
         });
     });
+
+    document.querySelectorAll('.team__block2').forEach(item => {
+        item.addEventListener('click', function() {
+            var popupId = this.getAttribute('data-target');
+            document.querySelector(popupId).style.display = 'block';
+            // Additional code if needed...
+        });
+    });
+
+ 
 
     // ... other JavaScript code ...
 
