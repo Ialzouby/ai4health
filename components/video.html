@@ -96,35 +96,42 @@
     var pauseButton = document.getElementById('pauseButton');
     var muteButton = document.getElementById('muteButton');
 
-// Play the video
-function playVideo() {
-  video.play();
-}
+    // Ensure the video plays on page load
+    window.addEventListener('load', function() {
+      video.muted = true;
+      video.play().catch(function(error) {
+        console.log('Error attempting to play the video:', error);
+      });
+    });
 
-// Pause the video
-function pauseVideo() {
-  video.pause();
-}
+    // Play the video
+    function playVideo() {
+      video.play();
+    }
 
-// Mute/Unmute the video
-function toggleMute() {
-  video.muted = !video.muted;
-  muteButton.innerHTML = video.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
-}
+    // Pause the video
+    function pauseVideo() {
+      video.pause();
+    }
 
-// Add event listeners for the buttons
-pauseButton.addEventListener('click', function() {
-  if (video.paused) {
-    playVideo();
-    pauseButton.innerHTML = '<i class="fas fa-pause"></i>';
-  } else {
-    pauseVideo();
-    pauseButton.innerHTML = '<i class="fas fa-play"></i>';
-  }
-});
+    // Mute/Unmute the video
+    function toggleMute() {
+      video.muted = !video.muted;
+      muteButton.innerHTML = video.muted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
+    }
 
-muteButton.addEventListener('click', toggleMute);
+    // Add event listeners for the buttons
+    pauseButton.addEventListener('click', function() {
+      if (video.paused) {
+        playVideo();
+        pauseButton.innerHTML = '<i class="fas fa-pause"></i>';
+      } else {
+        pauseVideo();
+        pauseButton.innerHTML = '<i class="fas fa-play"></i>';
+      }
+    });
 
+    muteButton.addEventListener('click', toggleMute);
 
     // Your existing JavaScript code for popups
     document.querySelectorAll('.team__block').forEach(item => {
