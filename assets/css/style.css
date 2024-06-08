@@ -262,7 +262,7 @@ section.banner__one {
 .service__icon i {
     width: 110px;
     height: 126px;
-    background: linear-gradient(192deg, rgba(246, 236, 79, 0.32) 0%, rgba(150, 6, 147, 0.60) 100%);
+    background: linear-gradient(192deg, rgba(246, 236, 79, 0.32) 0%, rgba(0, 112, 60, 0.60) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,7 +278,7 @@ section.banner__one {
     width: 110px;
     height: 126px;
     position: absolute;
-    background: rgba(128, 5, 153, 0.30);
+    background: rgba(0, 112, 60, 0.30);
     top: -11px;
     left: 50%;
     z-index: -1;
@@ -293,7 +293,7 @@ section.banner__one {
     width: 15px;
     content: "";
     height: 18px;
-    background: #800599;
+    background: #00703c;
     clip-path: polygon(50% 0, 100% 25%, 100% 85%, 50% 100%, 0 85%, 0 25%);
     margin: 0 auto;
     position: absolute;
@@ -353,7 +353,7 @@ section.banner__one {
   inset: 0;
   padding: 1px 1px 0px;
   border-radius: 194.5px 194.5px 0px 0px;
-  background:linear-gradient(180deg, rgba(246, 236, 79, 0.53), rgba(150, 6, 147, 0.23)); 
+  background:linear-gradient(180deg, rgba(246, 236, 79, 0.53), rgba(0, 112, 60, 0.60, 0.23)); 
   -webkit-mask: 
      linear-gradient(#fff 0 0) content-box, 
      linear-gradient(#fff 0 0);
@@ -456,7 +456,7 @@ section.banner__one {
     height: 847.578px;
     transform: rotate(21.269deg);
     border-radius: 847.578px;
-    background: linear-gradient(192deg, rgba(0, 0, 255, 0.5) 0%, rgba(150, 6, 147, 0.40) 100%);
+    background: linear-gradient(192deg, rgba(0, 0, 255, 0.5) 0%, rgba(0, 112, 60, 0.40) 100%);
     filter: blur(150px);
     position: absolute;
     left: 80px;
@@ -472,7 +472,7 @@ section.banner__one {
     height: 516.286px;
     transform: rotate(21.269deg);
     border-radius: 516.286px;
-    background: linear-gradient(192deg, rgba(246, 236, 79, 0.32) 0%, rgba(150, 6, 147, 0.60) 100%);
+    background: linear-gradient(192deg, rgba(246, 236, 79, 0.32) 0%, rgba(0, 112, 60, 0.60) 100%);
     filter: blur(150px);
     position: absolute;
     left: 0;
@@ -530,7 +530,7 @@ section.banner__one {
 background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128, 0.60) 100%);
 }
 .funfact__content.three {
-    background: #800599;
+    background: #00703c;
     margin-top: -48px;
 }
 .funfact__data .count-outer span.two {
@@ -695,7 +695,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
     padding: 20px 20px;
 }
 .test__bg {
-    background: linear-gradient(175deg, rgba(246, 236, 79, 0.53) 0%, rgba(150, 6, 147, 1) 100%);
+    background: linear-gradient(175deg, rgba(246, 236, 79, 0.53) 0%, rgba(0, 112, 60, 1) 100%);
     width: 400px;
     height: 487px;
     position: absolute;
