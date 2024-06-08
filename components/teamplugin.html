@@ -1,375 +1,356 @@
-<style> 
-.team__data {
-    display: flex;
-    gap: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 30px 0px;
-}
-.team__data__left img {
-    width: 80px;
-    padding-top: 8px;
-}
-.team__data__right h3 {
-    font-size: 26px;
-    line-height: 36px;
-    padding-bottom: 10px;   
-}
-.team__data:nth-child(2) {
-    padding-top: 0px;
-}
-.team__data:nth-child(4) {
-    padding-bottom: 0;
-    border-bottom: none;
-}
-/* choose__us-section  end */
-
-/* team-section   */
-
-.team__img img {
-    width: 100%;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
-.team__img {
-    position: relative;
-}
-.team__img:before {
-    content: "";
-    background: rgba(128, 5, 153, 0.3);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    transition: all 500ms ease;
-    top: -30px;
-}
-.team__block:hover .team__img:before {
-    background: #4F502C;
-}
+    <style>
 .team__block {
     text-align: center;
-}
-.team__name {
-    padding: 20px 0px 10px;
-}
-.team__media ul {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-.team__media ul a {
-    color: #800599;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: Rubik;
-    line-height: 30px;
-}
-.team__media ul a:hover {
-    color: #97e4ff;
-}
-.team__section .pattern-3 {
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    background-repeat:no-repeat ;
-}
-.team__section:before {
-    content: "";
-    width: 574.366px;
-    height: 847.578px;
-    transform: rotate(21.269deg);
-    border-radius: 847.578px;
-    background: linear-gradient(192deg, rgba(246, 236, 79, 0.21) 0%, rgba(150, 6, 147, 0.40) 100%);
-    filter: blur(150px);
-    position: absolute;
-    right: -44px;
-    top: -200px;
-}
-
-
-/* my code */
-
-.section-title {
-    background: linear-gradient(to right, rgba(123, 175, 212, 0.1), rgba(123, 175, 212, 0.5));
-    padding: 10px 20px; /* Adjust padding as needed */
-    width: 100%; /* Full width of the container */
-    box-sizing: border-box; /* Include padding in the width */
-    text-align: center; /* Center the title text */
-    margin: auto; /* Center the title bar if width is less than 100% */
-}
-
-
-.home-button {
-    transition: background-color 0.3s, transform 0.1s;
-    display: inline-block;
-    position: absolute;
-    bottom: -50px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px; /* Diameter of the circle */
-    height: 50px; /* Diameter of the circle */
-    border-radius: 50%; /* Makes it circular */
-    background-color: #fff; /* Or any color you prefer */
-    text-align: center;
-    line-height: 50px; /* Vertically center the icon */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
-    transition: transform 0.1s ease-in-out; /* Smooth transition for active state */
-    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
-}
-
-.home-button img {
-    width: 100%; /* Fill the entire width of the button */
-    height: 100%; /* Fill the entire height of the button */
-    object-fit: cover; /* Cover the area without stretching */
-    border-radius: 50%; 
-     transition: opacity 0.3s;
-
-
-}
-
-.home-button:hover img {
-    opacity: 0.7; /* Slightly transparent image on hover */
-}
-
-
-/* Enlarge button when clicked */
-.home-button:active {
-    transform: translateX(-50%) scale(1.1); /* Slightly enlarge the button */
-}
-
-
-
-/* Hover state */
-.home-button:hover {
-    background-color: #e0e0e0; /* Change color on hover */
-}
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-    .popup-content {
-        width: 80%; /* Slightly wider on smaller screens */
-    }
-}
-
-/* Media query for mobile phones */
-@media (max-width: 480px) {
-    .popup-content {
-        width: 80%; /* Much wider on mobile screens */
-        margin: 20px auto; /* Adjust margin for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .uniqueVideoBgContainer {
-        height: auto; /* Adjust height to maintain aspect ratio */
-    }
-    .uniqueVideoBg {
-        min-width: 100%; /* Ensure the video covers the width */
-        min-height: auto; /* Adjust height to maintain aspect ratio */
-    }
-}
-
-
-.page__title {
-    margin-bottom: 1px; /* Adjust as needed */
-}
-
-.content__box {
-    padding-bottom: 1px; /* Adjust as needed */
-}
-
-.auto-container {
-    margin-bottom: 1px; /* Adjust as needed */
-}
-
-.bg-layer {
-    /* Adjust padding or margin if necessary */
-}
-
-.bread__crumb, .title {
-    margin-bottom: 1px; /* Adjust as needed */
-}
-
-
-
-
-.main-content.blurred {
-    filter: blur(5px);
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    z-index: 1000; /* High z-index to be above other content */
-    
-}
-
-
-.popup-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.popup-inner {
-    display: flex;
-    align-items: start;
-}
-
-.popup-image {
-    flex-basis: 40%; /* Adjust as needed */
-    margin-right: 20px; /* Space between image and text */
-    border-radius: 100px; 
-}
-
-.popup-text {
-    flex-basis: 60%; /* Adjust as needed */
-}
-
-
-
-.popup-content {
-    position: relative;
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 30px;
-    border-radius: 15px;
-    min-width: 300px; /* Minimum width */
-    max-width: 80%; /* Maximum width */
-    width: auto; 
-  
-    height: auto; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-}
-
-.close {
-     position: absolute;
-    top: 5px; /* Adjusted to account for added padding */
-    right: 10px; /* Adjusted to account for added padding */
-    font-size: 30px;
-    cursor: pointer;
-    padding: 15px; /* Adds padding around the '×', increasing the clickable area */
-    margin: -15px; /* Optional: offsets the added padding to maintain the original position */
-    background: transparent; /* Ensures the padding doesn't add a background color */
-    border: none;
-
-     }
-
-
-.popup-content h3 {
-    color: black; /* This sets the color of h3 headings to black */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    
-}
-
-.popup-content p {
-    color: black; /* This sets the color of paragraphs to black */
-    margin-bottom: 10; 
-}
-
-
-
-
-.section-title {
-    margin-bottom: 75px; /* Adjust this value as needed for space below titles */
-    margin-top: 60px;
-}
-
-.team__block {
+    justify-content: flex-start;
     margin-bottom: 30px; /* Consistent space between team blocks */
+    padding-left: 35px; /* Adjust the padding value as needed */
 }
 
-/* Additional styling for responsive adjustments if needed */
-@media (max-width: 767px) {
-    .section-title {
-        margin-bottom: 20px; /* Smaller space for mobile devices */
-    }
-}
-
-
-
-.popup-image .homepage-link {
-    display: block; /* Ensures it takes its own line */
-    text-align: center; /* Center align the text */
-    margin-top: 10px; /* Space between the image and the text */
-    color: #007bff; /* Or any color you prefer for the link */
-    text-decoration: none; /* Optional: Removes underline */
-    font-weight: bold; /* Optional: Makes text bold */
-    border-radius: 10px; 
-}
-
-.popup-image .homepage-link:hover {
-    text-decoration: underline; /* Optional: Underline on hover */
-    border-radius: 10px; 
-}
-.popup-image img {
-    border-radius: 10px; /* Adjust the border-radius to your preference */
-}
-/* Center the image vertically within the popup */
-.popup-inner {
-    display: flex;
-    align-items: center;
-}
-
-
-.popup-text .role {
-    font-size: smaller; /* Smaller than the h3 size */
-    color: #6c757d; /* A lighter color; adjust as needed */
-    margin-top: 5px; /* Space above the role text */
-    /* Space below the role text */
-}
-
-.team__role {
-    font-size: 13px; /* Smaller than the h3 size */
-    color: #6c757d; /* A lighter color, adjust as needed */
-    margin-top: 5px; /* Space above the role text */
-    /* Space below the role text */
-}
-
-/* Style for the transparent cylinder */
-/* Style for the smaller transparent cylinder */
-.leadership-cylinder {
-    display: inline-block;
-    padding: 1px 4px;
-    background: rgba(0, 0, 255, 0.1); /* Transparent background color */
-    border: 1px solid #007bff; /* Baby blue outline */
-    border-radius: 100px; /* Rounded corners */
+.team__block2 {
     text-align: center;
-    
-    margin-bottom: 11px;
-    height: 20px; /* Adjust the height to make it shorter */
-    font-size: 7px;
-    line-height: 20px; /* Center the text vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px; /* Consistent space between team blocks */
+    padding-left: 55px; /* Adjust the padding value as needed */
 }
 
-/* Style for the text inside the cylinder */
-.leadership-text {
-    color: #007bff; /* Baby blue text color */
-    font-weight: bold;
-    text-transform: uppercase; /* Uppercase text */
-}
-
-
-</style>
+        .team__data {
+            display: flex;
+            gap: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 30px 0px;
+        }
+        .team__data__left img {
+            width: 80px;
+            padding-top: 8px;
+        }
+        .team__data__right h3 {
+            font-size: 26px;
+            line-height: 36px;
+            padding-bottom: 10px;   
+        }
+        .team__data:nth-child(2) {
+            padding-top: 0px;
+        }
+        .team__data:nth-child(4) {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        /* choose__us-section  end */
+        
+        /* team-section   */
+        
+        .team__img img {
+            width: 100%;
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        }
+        .team__img {
+            position: relative;
+        }
+        .team__img:before {
+            content: "";
+            background: rgba(128, 5, 153, 0.3);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            transition: all 500ms ease;
+            top: -30px;
+        }
+        .team__block:hover .team__img:before {
+            background: #4F502C;
+        }
+        .team__block {
+            text-align: center;
+        }
+        .team__name {
+            padding: 20px 0px 10px;
+        }
+        .team__media ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .team__media ul a {
+            color: #800599;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: Rubik;
+            line-height: 30px;
+        }
+        .team__media ul a:hover {
+            color: #97e4ff;
+        }
+        .team__section .pattern-3 {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background-repeat:no-repeat ;
+        }
+        .team__section:before {
+            content: "";
+            width: 574.366px;
+            height: 847.578px;
+            transform: rotate(21.269deg);
+            border-radius: 847.578px;
+            background: linear-gradient(192deg, rgba(246, 236, 79, 0.21) 0%, rgba(150, 6, 147, 0.40) 100%);
+            filter: blur(150px);
+            position: absolute;
+            right: -44px;
+            top: -200px;
+        }
+        
+        .section-title {
+            background: linear-gradient(to right, rgba(123, 175, 212, 0.1), rgba(123, 175, 212, 0.5));
+            padding: 10px 20px; /* Adjust padding as needed */
+            width: 100%; /* Full width of the container */
+            box-sizing: border-box; /* Include padding in the width */
+            text-align: center; /* Center the title text */
+            margin: auto; /* Center the title bar if width is less than 100% */
+        }
+        
+        .home-button {
+            transition: background-color 0.3s, transform 0.1s;
+            display: inline-block;
+            position: absolute;
+            bottom: -50px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px; /* Diameter of the circle */
+            height: 50px; /* Diameter of the circle */
+            border-radius: 50%; /* Makes it circular */
+            background-color: #fff; /* Or any color you prefer */
+            text-align: center;
+            line-height: 50px; /* Vertically center the icon */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+            transition: transform 0.1s ease-in-out; /* Smooth transition for active state */
+            cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+        }
+        
+        .home-button img {
+            width: 100%; /* Fill the entire width of the button */
+            height: 100%; /* Fill the entire height of the button */
+            object-fit: cover; /* Cover the area without stretching */
+            border-radius: 50%; 
+             transition: opacity 0.3s;
+        }
+        
+        .home-button:hover img {
+            opacity: 0.7; /* Slightly transparent image on hover */
+        }
+        
+        .home-button:active {
+            transform: translateX(-50%) scale(1.1); /* Slightly enlarge the button */
+        }
+        
+        .home-button:hover {
+            background-color: #e0e0e0; /* Change color on hover */
+        }
+        
+        @media screen and (max-width: 600px) {
+            .bio {
+                display: none !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .popup-content {
+                width: 80%; /* Slightly wider on smaller screens */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .popup-content {
+                width: 80%; /* Much wider on mobile screens */
+                margin: 20px auto; /* Adjust margin for smaller screens */
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .uniqueVideoBgContainer {
+                height: auto; /* Adjust height to maintain aspect ratio */
+            }
+            .uniqueVideoBg {
+                min-width: 100%; /* Ensure the video covers the width */
+                min-height: auto; /* Adjust height to maintain aspect ratio */
+            }
+        }
+        
+        .page__title {
+            margin-bottom: 1px; /* Adjust as needed */
+        }
+        
+        .content__box {
+            padding-bottom: 1px; /* Adjust as needed */
+        }
+        
+        .auto-container {
+            margin-bottom: 1px; /* Adjust as needed */
+        }
+        
+        .bg-layer {
+            /* Adjust padding or margin if necessary */
+        }
+        
+        .bread__crumb, .title {
+            margin-bottom: 1px; /* Adjust as needed */
+        }
+        
+        .main-content.blurred {
+            filter: blur(5px);
+        }
+        
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            z-index: 1000; /* High z-index to be above other content */
+        }
+        
+        .popup-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .popup-inner {
+            display: flex;
+            align-items: start;
+        }
+        
+        .popup-image {
+            flex-basis: 40%; /* Adjust as needed */
+            margin-right: 20px; /* Space between image and text */
+            border-radius: 100px; 
+        }
+        
+        .popup-text {
+            flex-basis: 60%; /* Adjust as needed */
+        }
+        
+        .popup-content {
+            position: relative;
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 30px;
+            border-radius: 15px;
+            min-width: 300px; /* Minimum width */
+            max-width: 80%; /* Maximum width */
+            width: auto; 
+            height: auto; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+        
+        .close {
+            position: absolute;
+            top: 5px; /* Adjusted to account for added padding */
+            right: 10px; /* Adjusted to account for added padding */
+            font-size: 30px;
+            cursor: pointer;
+            padding: 15px; /* Adds padding around the '×', increasing the clickable area */
+            margin: -15px; /* Optional: offsets the added padding to maintain the original position */
+            background: transparent; /* Ensures the padding doesn't add a background color */
+            border: none;
+        }
+        
+        .popup-content h3 {
+            color: black; /* This sets the color of h3 headings to black */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+        
+        .popup-content p {
+            color: black; /* This sets the color of paragraphs to black */
+            margin-bottom: 10; 
+        }
+        
+        .section-title {
+            margin-bottom: 75px; /* Adjust this value as needed for space below titles */
+            margin-top: 60px;
+        }
+        
+        .team__block {
+            margin-bottom: 30px; /* Consistent space between team blocks */
+        }
+        
+        @media (max-width: 767px) {
+            .section-title {
+                margin-bottom: 20px; /* Smaller space for mobile devices */
+            }
+        }
+        
+        .popup-image .homepage-link {
+            display: block; /* Ensures it takes its own line */
+            text-align: center; /* Center align the text */
+            margin-top: 10px; /* Space between the image and the text */
+            color: #007bff; /* Or any color you prefer for the link */
+            text-decoration: none; /* Optional: Removes underline */
+            font-weight: bold; /* Optional: Makes text bold */
+            border-radius: 10px; 
+        }
+        
+        .popup-image .homepage-link:hover {
+            text-decoration: underline; /* Optional: Underline on hover */
+            border-radius: 10px; 
+        }
+        .popup-image img {
+            border-radius: 10px; /* Adjust the border-radius to your preference */
+        }
+        
+        .popup-inner {
+            display: flex;
+            align-items: center;
+        }
+        
+        .popup-text .role {
+            font-size: smaller; /* Smaller than the h3 size */
+            color: #6c757d; /* A lighter color; adjust as needed */
+            margin-top: 5px; /* Space above the role text */
+            /* Space below the role text */
+        }
+        
+        .team__role {
+            font-size: 13px; /* Smaller than the h3 size */
+            color: #6c757d; /* A lighter color, adjust as needed */
+            margin-top: 5px; /* Space above the role text */
+            /* Space below the role text */
+        }
+        
+        .leadership-cylinder {
+            display: inline-block;
+            padding: 1px 4px;
+            background: rgba(0, 0, 255, 0.1); /* Transparent background color */
+            border: 1px solid #007bff; /* Baby blue outline */
+            border-radius: 100px; /* Rounded corners */
+            text-align: center;
+            margin-bottom: 11px;
+            height: 20px; /* Adjust the height to make it shorter */
+            font-size: 7px;
+            line-height: 20px; /* Center the text vertically */
+        }
+        
+        .leadership-text {
+            color: #007bff; /* Baby blue text color */
+            font-weight: bold;
+            text-transform: uppercase; /* Uppercase text */
+        }
+    </style>
 
 <html lang="en">
 <head>
@@ -416,7 +397,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Leadership</span>
                 </div>
-                <p>Biography
+                <p class="bio">Biography
 
                     Pu Wang received B.Eng degree in Electrical Engineering from Beijing Institute of Technology, China, in 2003, and M.Eng degree in Electrical and Computer Engineering from Memorial University of Newfoundland , Canada, in 2008. He received the Ph.D. degree in Electrical and Computer Engineering from the Georgia Institute of Technology, Atlanta, GA, in August 2013, under the guidance of Professor Ian F. Akyildiz.
                     
@@ -459,7 +440,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Leadership</span>
                 </div>
-                <p>Dr. Ahmed Helmy is a distinguished academic with a rich background in computer science and electrical engineering. He holds a Ph.D. in Computer Science ('99) and an M.S. in Electrical Engineering ('95) from the University of Southern California (USC), as well as an M.S. in Engineering Mathematics ('94) and a B.S. in Electrical Engineering ('92) from Cairo University. Dr. Helmy played a significant role in developing the IP multicast Internet standard PIM and Network Simulator NS-2 at USC/ISI.
+                <p class="bio">Dr. Ahmed Helmy is a distinguished academic with a rich background in computer science and electrical engineering. He holds a Ph.D. in Computer Science ('99) and an M.S. in Electrical Engineering ('95) from the University of Southern California (USC), as well as an M.S. in Engineering Mathematics ('94) and a B.S. in Electrical Engineering ('92) from Cairo University. Dr. Helmy played a significant role in developing the IP multicast Internet standard PIM and Network Simulator NS-2 at USC/ISI.
 
                     Currently, he serves as the Associate Dean for Research at the College of Computing & Informatics at the University of North Carolina, Charlotte. His previous positions include Professor and Graduate Director at the University of Florida's CISE Department and Professor in the EE Department at USC, where he established labs focused on Wireless Sensor Networks and Protocol Testing.
                     
@@ -511,7 +492,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Dr. Minwoo Lee is a professor in the Department of Computer Science, University of North Carolina Charlotte. He is working on machine learning algorithms for reinforcement learning. His interests focus on various topics in machine learning, with an emphasis on reinforcement learning, such as interpretational learning, transfer learning, sparse learning, multiagent learning, fine control-based policy development, and robust knowledge augmentation. Recent research focuses on the analysis of learning behavior with sparse Bayesian learning.</p>
+                <p class="bio">Dr. Minwoo Lee is a professor in the Department of Computer Science, University of North Carolina Charlotte. He is working on machine learning algorithms for reinforcement learning. His interests focus on various topics in machine learning, with an emphasis on reinforcement learning, such as interpretational learning, transfer learning, sparse learning, multiagent learning, fine control-based policy development, and robust knowledge augmentation. Recent research focuses on the analysis of learning behavior with sparse Bayesian learning.</p>
             </div>
         </div>
     </div>
@@ -551,7 +532,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Min C. Shin (Ph.D., Computer Science, University of South Florida, 2001) is a Professor of Computer Science and the Assistant Dean for Research in the College of Computing and Informatics at UNC Charlotte. His research interests are in Computer Vision, with a focus on multiple object tracking. He has had multiple successful NSF, NIH, DARPA, and industry grants to develop tracking algorithms and user-friendly software for several systems (ants, bees, cells, termites, robots, people, cars).  His current NSF project is funding deployment of a highly usable application based on his group’s 10+ years of multiple object tracking work (www.abctracker.org). He has mentored two Ph.D. students (one faculty and one at industry research), and is currently mentoring two Ph.D. students including one female student. He has been regularly mentoring multiple undergraduate research students for past 18 years. He has been serving as an Associate Editor for IEEE Transactions on Systems, Man, and Cybernetics-B and on the program committees of major computer vision conferences including ICCV, CVPR, ECCV.</p>
+                <p class="bio">Min C. Shin (Ph.D., Computer Science, University of South Florida, 2001) is a Professor of Computer Science and the Assistant Dean for Research in the College of Computing and Informatics at UNC Charlotte. His research interests are in Computer Vision, with a focus on multiple object tracking. He has had multiple successful NSF, NIH, DARPA, and industry grants to develop tracking algorithms and user-friendly software for several systems (ants, bees, cells, termites, robots, people, cars).  His current NSF project is funding deployment of a highly usable application based on his group’s 10+ years of multiple object tracking work (www.abctracker.org). He has mentored two Ph.D. students (one faculty and one at industry research), and is currently mentoring two Ph.D. students including one female student. He has been regularly mentoring multiple undergraduate research students for past 18 years. He has been serving as an Associate Editor for IEEE Transactions on Systems, Man, and Cybernetics-B and on the program committees of major computer vision conferences including ICCV, CVPR, ECCV.</p>
             </div>
         </div>
     </div>
@@ -590,7 +571,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Dr. Liyue Fan is an Assistant Professor in Computer Science in the College of Computing and Informatics at the University of North Carolina at Charlotte. Her research is at the intersection of data privacy and spatio-temporal databases (see list of publications here). She was named one of the "Rising Stars in EECS" by MIT in 2015.
+                <p class="bio">Dr. Liyue Fan is an Assistant Professor in Computer Science in the College of Computing and Informatics at the University of North Carolina at Charlotte. Her research is at the intersection of data privacy and spatio-temporal databases (see list of publications here). She was named one of the "Rising Stars in EECS" by MIT in 2015.
 
                     Prior to joining UNC Charlotte, Dr. Fan was an Assistant Professor in Information Technology Management at University at Albany. She spent two years as a postdoc research associate in the Integrated Media System Center at University of Southern California, under the supervision of Prof. Cyrus Shahabi. She received a Ph.D. in Computer Science & Informatics from Emory University (with Prof. Li Xiong) and a B.S.in Mathematics from Zhejiang University (a Chu Kochen ACEE alumna).
                     
@@ -633,7 +614,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>I am an Assistant Professor in the Department of Computer Science at the University of North Carolina at Charlotte. At UNC Charlotte, I am working on Video Representation Learning, and Robotic Vision. I am a member of the Charlotte Machine Learning Lab (CharMLab) at UNC Charlotte.
+                <p class="bio">I am an Assistant Professor in the Department of Computer Science at the University of North Carolina at Charlotte. At UNC Charlotte, I am working on Video Representation Learning, and Robotic Vision. I am a member of the Charlotte Machine Learning Lab (CharMLab) at UNC Charlotte.
 
                     Before this, I was a Postdoctoral Associate at Stony Brook University under the supervision of Michael Ryoo. In 2020, I completed my Ph.D. in Computer Science at INRIA, Sophia Antipolis, France under the supervision of Francois Bremond and Monique Thonnat. My Ph.D. thesis is on ¨Spatio-temporal attention mechanisms for Action Recognition¨ and click here to watch my Defense Presentation. I did my Post-Grad in Computer Science from the National Institute of Technology (NIT), Rourkela.
                     
@@ -678,7 +659,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Dr. Razvan C. Bunescu is a highly accomplished computer scientist with a strong educational background, holding a Ph.D. in Computer Science from the University of Texas at Austin (2007), and both an M.S. and B.S. in Computer Science from the University Politehnica of Bucharest (1999, 1998). His primary research interests span across machine learning, natural language processing, and music information retrieval. Dr. Bunescu is actively involved in seeking motivated Ph.D. students with proficient programming skills to join his research endeavors in these areas.</p>
+                <p class="bio">Dr. Razvan C. Bunescu is a highly accomplished computer scientist with a strong educational background, holding a Ph.D. in Computer Science from the University of Texas at Austin (2007), and both an M.S. and B.S. in Computer Science from the University Politehnica of Bucharest (1999, 1998). His primary research interests span across machine learning, natural language processing, and music information retrieval. Dr. Bunescu is actively involved in seeking motivated Ph.D. students with proficient programming skills to join his research endeavors in these areas.</p>
             </div>
         </div>
     </div>
@@ -717,7 +698,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Xiang is an Assistant Professor in the Department of Computer Science at the University of North Carolina (UNC) at Charlotte. Before joining UNC Charlotte, he was a postdoctoral fellow at Harvard University from March 2020 to July 2022. Xiang received his Ph.D. degree (in 2020) in Computer Science from the University of New South Wales (UNSW). His research interests lie in data mining and machine learning with applications in pervasive healthcare, medical time series, and Brain-Computer Interfaces (BCIs). Xiang's research outcomes have been published in prestigious conferences (such as ICLR, NeurIPS, and KDD) and journals (like Nature Computational Science).
+                <p class="bio">Xiang is an Assistant Professor in the Department of Computer Science at the University of North Carolina (UNC) at Charlotte. Before joining UNC Charlotte, he was a postdoctoral fellow at Harvard University from March 2020 to July 2022. Xiang received his Ph.D. degree (in 2020) in Computer Science from the University of New South Wales (UNSW). His research interests lie in data mining and machine learning with applications in pervasive healthcare, medical time series, and Brain-Computer Interfaces (BCIs). Xiang's research outcomes have been published in prestigious conferences (such as ICLR, NeurIPS, and KDD) and journals (like Nature Computational Science).
 
                 </p>
             </div>
@@ -757,7 +738,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Dr. Aidong Lu is a distinguished Professor in the Department of Computer Science at the University of North Carolina at Charlotte. With a focus on Data Visualization and Mixed Reality, Dr. Lu's work revolves around immersive analytics, offering innovative approaches to visualizing complex data. She is keenly interested in applications that span across social network analysis, augmented and virtual reality, 3D interactions, and gaming analytics. Her commitment to education is evident in her active engagement with both undergraduate and graduate students, encouraging them to participate in visualization courses and lab projects. Dr. Lu’s lab is equipped with diverse devices, facilitating hands-on learning experiences in these fields.</p>
+                <p class="bio">Dr. Aidong Lu is a distinguished Professor in the Department of Computer Science at the University of North Carolina at Charlotte. With a focus on Data Visualization and Mixed Reality, Dr. Lu's work revolves around immersive analytics, offering innovative approaches to visualizing complex data. She is keenly interested in applications that span across social network analysis, augmented and virtual reality, 3D interactions, and gaming analytics. Her commitment to education is evident in her active engagement with both undergraduate and graduate students, encouraging them to participate in visualization courses and lab projects. Dr. Lu’s lab is equipped with diverse devices, facilitating hands-on learning experiences in these fields.</p>
             </div>
         </div>
     </div>
@@ -796,7 +777,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>I am an Assitant Professor at University of North Carolina at Charlotte in Computer Science Department, where I work on Data-intensive and High-performance systems.
+                <p class="bio">I am an Assitant Professor at University of North Carolina at Charlotte in Computer Science Department, where I work on Data-intensive and High-performance systems.
 
                     I work in optimizing and designing intelligent infrastructure for high-performance data-intensive systems, such as parallel file systems, metadata management, graph storage, and resource management.
                     
@@ -846,7 +827,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>
+                <p class="bio">
                     Srinivas Akella is a researcher specializing in diverse fields within robotics and automation. His work includes developing algorithms for coordinating multiple robots, enabling collision-free interactions in shared workspaces, as well as optimizing digital microfluidic systems for efficient biochemical analysis. Akella also focuses on proximity queries between convex objects and dynamic simulations of multibody systems with intermittent contact, contributing to precise and reliable modeling of complex mechanical systems. Furthermore, he explores articulated 3-D structures and protein folding pathways, showcasing his broad expertise in the robotics and computational geometry domains.</p>
             </div>
         </div>
@@ -886,7 +867,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Dr. Wenhao Luo is an Assistant Professor in Computer Science at UNC Charlotte. His research interests are at the intersection of robotics, control theory, artificial intelligence, and machine learning. Specifically, Dr. Luo’s research focuses on principled methods for robust and interactive autonomy that enable robots to safely and effectively collaborate with each other and with humans in the physical world. His recent work has focused on learning and control for safe autonomous multi-robot systems, with emphasis on robustness, resilience, and adversaries in the systems. He received MS and PhD degrees in Robotics from Carnegie Mellon University, and his B.E. degree with honors in Measurement & Control Technology and Instruments from Central South University, China. He was a research intern at Microsoft Research in the summer of 2019 and 2020. His work has been supported by NSF, USDA, DARPA, ONR, and AFOSR.</p>
+                <p class="bio">Dr. Wenhao Luo is an Assistant Professor in Computer Science at UNC Charlotte. His research interests are at the intersection of robotics, control theory, artificial intelligence, and machine learning. Specifically, Dr. Luo’s research focuses on principled methods for robust and interactive autonomy that enable robots to safely and effectively collaborate with each other and with humans in the physical world. His recent work has focused on learning and control for safe autonomous multi-robot systems, with emphasis on robustness, resilience, and adversaries in the systems. He received MS and PhD degrees in Robotics from Carnegie Mellon University, and his B.E. degree with honors in Measurement & Control Technology and Instruments from Central South University, China. He was a research intern at Microsoft Research in the summer of 2019 and 2020. His work has been supported by NSF, USDA, DARPA, ONR, and AFOSR.</p>
             </div>
         </div>
     </div>
@@ -926,7 +907,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Yaorong Ge, Ph,D., comes to the Department of Software and Information Systems as a tenured Associate Professor after serving as an Associate Professor in the Department of Biomedical Engineering and the Center of Biomedical Informatics at Wake Forest University Health Sciences (WFUHS). He received his Ph.D. in Computer Science-Medical Engineering from Vanderbilt University (1995). Dr. Ge has extensive experience in imaging informatics and medical informatics. He was a part of the virtual colonoscopy research group that initiated and advanced the development of virtual colonoscopy, a minimally invasive technology for colorectal cancer screening. His expertise in imaging includes image registration, segmentation, skeletonization, computer-aided diagnosis, and radiology structured reporting. Dr. Ge also has strong experience in industry-strength software development. He co-founded and managed a medical software company to commercialize virtual colonoscopy and radiology structured reporting technologies. As Chief Technology Officer of the company, he established rigorous software engineering processes and a strong engineering team that produced state-of-the-art, FDA cleared imaging information systems, as well as a clinical ontology for radiology reporting. After the startup was acquired by IDX Corporation, an industry leader in healthcare IT before being merged into GE Healthcare, he became the Director of the software development team of IDX’s radiology information system division.</p>
+                <p class="bio">Yaorong Ge, Ph,D., comes to the Department of Software and Information Systems as a tenured Associate Professor after serving as an Associate Professor in the Department of Biomedical Engineering and the Center of Biomedical Informatics at Wake Forest University Health Sciences (WFUHS). He received his Ph.D. in Computer Science-Medical Engineering from Vanderbilt University (1995). Dr. Ge has extensive experience in imaging informatics and medical informatics. He was a part of the virtual colonoscopy research group that initiated and advanced the development of virtual colonoscopy, a minimally invasive technology for colorectal cancer screening. His expertise in imaging includes image registration, segmentation, skeletonization, computer-aided diagnosis, and radiology structured reporting. Dr. Ge also has strong experience in industry-strength software development. He co-founded and managed a medical software company to commercialize virtual colonoscopy and radiology structured reporting technologies. As Chief Technology Officer of the company, he established rigorous software engineering processes and a strong engineering team that produced state-of-the-art, FDA cleared imaging information systems, as well as a clinical ontology for radiology reporting. After the startup was acquired by IDX Corporation, an industry leader in healthcare IT before being merged into GE Healthcare, he became the Director of the software development team of IDX’s radiology information system division.</p>
             </div>
         </div>
     </div>
@@ -969,7 +950,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Dr. Abbey Thomas (Abbey Fenwick) is an Assistant Professor in Kinesiology at UNC Charlotte. She teaches in the undergraduate Athletic Training Education Program and advises graduate students in the Applied Physiology and Neuromechanics program. Her research focuses on the long-term consequences of knee injury, particularly as it involves post-traumatic osteoarthritis development and treatment. She is currently a member of the executive committee for the Athletic Trainers’ Osteoarthritis Consortium.</p>
+                <p class="bio">Dr. Abbey Thomas (Abbey Fenwick) is an Assistant Professor in Kinesiology at UNC Charlotte. She teaches in the undergraduate Athletic Training Education Program and advises graduate students in the Applied Physiology and Neuromechanics program. Her research focuses on the long-term consequences of knee injury, particularly as it involves post-traumatic osteoarthritis development and treatment. She is currently a member of the executive committee for the Athletic Trainers’ Osteoarthritis Consortium.</p>
             </div>
         </div>
     </div>
@@ -1011,7 +992,7 @@
                     <div class="leadership-cylinder">
                         <span class="leadership-text">Research</span>
                     </div>
-                    <p>Dr. Joseph S. Marino leads the Marino lab, a research group dedicated to advancing our knowledge of skeletal muscle mass and metabolism regulation to enhance sports performance. As the Departmental Research Project Director for the U.S. Performance Center, Dr. Marino collaborates with National and Olympic-level athletes. His current research areas encompass investigating the impact of sport specialization on long-term athlete development, identifying risk factors related to the female athlete triad, studying the effects of sleep disturbances on athletic performance and health, and exploring resistance training adaptations in healthy and diseased skeletal muscle. Dr. Marino holds multiple degrees, including a Ph.D. in Applied Physiology, and has published numerous peer-reviewed articles on topics ranging from diabetes to muscle physiology. He has received grants to support his research and has been recognized with awards for his contributions to academia and mentoring. Dr. Marino is also involved in community engagement and serves as a representative for the College of Health and Human Services at the National Science Festival.</p>
+                    <p class="bio">Dr. Joseph S. Marino leads the Marino lab, a research group dedicated to advancing our knowledge of skeletal muscle mass and metabolism regulation to enhance sports performance. As the Departmental Research Project Director for the U.S. Performance Center, Dr. Marino collaborates with National and Olympic-level athletes. His current research areas encompass investigating the impact of sport specialization on long-term athlete development, identifying risk factors related to the female athlete triad, studying the effects of sleep disturbances on athletic performance and health, and exploring resistance training adaptations in healthy and diseased skeletal muscle. Dr. Marino holds multiple degrees, including a Ph.D. in Applied Physiology, and has published numerous peer-reviewed articles on topics ranging from diabetes to muscle physiology. He has received grants to support his research and has been recognized with awards for his contributions to academia and mentoring. Dr. Marino is also involved in community engagement and serves as a representative for the College of Health and Human Services at the National Science Festival.</p>
                 </div>
             </div>
         </div>
@@ -1051,7 +1032,7 @@
                     <div class="leadership-cylinder">
                         <span class="leadership-text">Research</span>
                     </div>
-                    <p>Dr. Luke Donovan is an Associate Professor in the Department of Applied Physiology, Health, and Clinical Sciences at the University of North Carolina at Charlotte. Prior to coming to UNC-Charlotte, he was an Assistant Professor at the University of Toledo and served as the Director of the CAATE-accredited Post-Professional Graduate Athletic Training program. Currently, Dr. Donovan teaches within the undergraduate Athletic Training and Exercise Science Programs and advises students within the Interdisciplinary Biology PhD Program. Dr. Donovan’s research interests includes the utilization of an impairment-based rehabilitation model for the treatment of chronic ankle instability, in which he is further refining the model by studying novel assessment and rehabilitation techniques.</p>
+                    <p class="bio">Dr. Luke Donovan is an Associate Professor in the Department of Applied Physiology, Health, and Clinical Sciences at the University of North Carolina at Charlotte. Prior to coming to UNC-Charlotte, he was an Assistant Professor at the University of Toledo and served as the Director of the CAATE-accredited Post-Professional Graduate Athletic Training program. Currently, Dr. Donovan teaches within the undergraduate Athletic Training and Exercise Science Programs and advises students within the Interdisciplinary Biology PhD Program. Dr. Donovan’s research interests includes the utilization of an impairment-based rehabilitation model for the treatment of chronic ankle instability, in which he is further refining the model by studying novel assessment and rehabilitation techniques.</p>
                 </div>
             </div>
         </div>
@@ -1092,7 +1073,7 @@
                     <div class="leadership-cylinder">
                         <span class="leadership-text">Research</span>
                     </div>
-                    <p>Dr. Kelly Powers, PhD, RN, CNE is an Associate Professor in the School of Nursing at UNC Charlotte. She has been a faculty member at UNC Charlotte since 2008 and has taught in the BSN, MSN, and DNP programs. Dr. Powers creates innovative simulations for the BSN program, and mentors BSN Honors students to conduct scholarly projects to advance clinical practice. Her current courses are focused on teaching and mentoring DNP students to conduct scholarly projects, preparing MSN students for the nurse educator role, and advancing graduate students’ interprofessional collaboration competencies. She created and teaches an interprofessional education (IPE) course for graduate students in nursing, social work, and other programs within the College of Health and Human Services. As a member of the steering committee of the North Carolina Interprofessional Education Leaders Collaborative (NC-IPELC), Dr. Powers collaborates with other IPE leaders across the state to advance interprofessional collaborative practice.</p>
+                    <p class="bio">Dr. Kelly Powers, PhD, RN, CNE is an Associate Professor in the School of Nursing at UNC Charlotte. She has been a faculty member at UNC Charlotte since 2008 and has taught in the BSN, MSN, and DNP programs. Dr. Powers creates innovative simulations for the BSN program, and mentors BSN Honors students to conduct scholarly projects to advance clinical practice. Her current courses are focused on teaching and mentoring DNP students to conduct scholarly projects, preparing MSN students for the nurse educator role, and advancing graduate students’ interprofessional collaboration competencies. She created and teaches an interprofessional education (IPE) course for graduate students in nursing, social work, and other programs within the College of Health and Human Services. As a member of the steering committee of the North Carolina Interprofessional Education Leaders Collaborative (NC-IPELC), Dr. Powers collaborates with other IPE leaders across the state to advance interprofessional collaborative practice.</p>
                 </div>
             </div>
         </div>
@@ -1134,7 +1115,7 @@
                     <div class="leadership-cylinder">
                         <span class="leadership-text">Research</span>
                     </div>
-                    <p>Meredith Troutman-Jordan, PhD, PMHCNS-BC a American Nurses Credentialing Center certified psychiatric mental health clinical nurse specialist, and my clinical experience includes work in inpatient, outpatient, and residential psychiatric mental health and substance abuse treatment, and home health.  She has worked primarily with older adults for the past 20 years.</p>
+                    <p class="bio">Meredith Troutman-Jordan, PhD, PMHCNS-BC a American Nurses Credentialing Center certified psychiatric mental health clinical nurse specialist, and my clinical experience includes work in inpatient, outpatient, and residential psychiatric mental health and substance abuse treatment, and home health.  She has worked primarily with older adults for the past 20 years.</p>
                 </div>
             </div>
         </div>
@@ -1174,7 +1155,7 @@
                         <div class="leadership-cylinder">
                             <span class="leadership-text">Research</span>
                         </div>
-                        <p>Professor, Mechanical Engineering and Engineering Science
+                        <p class="bio">Professor, Mechanical Engineering and Engineering Science
                             Associate and BMR Focus Area Leader, Center for Biomedical Engineering and Science
                             Associate, Gerontology Program
                             Vision Statement
@@ -1223,7 +1204,7 @@
                     <div class="leadership-cylinder">
                         <span class="leadership-text">Research</span>
                     </div>
-                    <p>Dr. Hongfei Xue is an Assistant Professor of Department of Computer Science at the University of North Carolina at Charlotte. He obtained the Ph.D. degree at the State University of New York at Buffalo jointly supervised by Prof. Lu Su and Prof. Aidong Zhang. Before that, he received his B.S. degree from the University of Science and Technology of China (USTC).
+                    <p class="bio">Dr. Hongfei Xue is an Assistant Professor of Department of Computer Science at the University of North Carolina at Charlotte. He obtained the Ph.D. degree at the State University of New York at Buffalo jointly supervised by Prof. Lu Su and Prof. Aidong Zhang. Before that, he received his B.S. degree from the University of Science and Technology of China (USTC).
 
                         Dr. Xue's research interests lie in the intersection of Internet of Things and Artificial Intelligence, with an emphasis on building intelligent wireless sensing systems. His research focuses on developing algorithms and systems that can intelligently collect, integrate, analyze, and eventually transform the IoT sensory data into useful knowledge that can draw a better understanding of the social and physical world.</p>
                 </div>
@@ -1244,7 +1225,7 @@
     <div class="row">
 <!-- Staff Member 1 -->
 <div class="col-lg-3 col-md-6 col-sm-12">
-    <div class="team__block wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff22">
+    <div class="team__block2 wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms" data-target="#popupStaff32">
         <div class="team__img">
             <figure>
                 <img src="assets/images/resource/team-01.jpg" alt="Issam Alzouby">
@@ -1259,7 +1240,7 @@
 
 <!-- Pop-up for Staff Member 1 -->
 
-<div id="popupStaff22" class="popup">
+<div id="popupStaff32" class="popup">
     <div class="popup-content">
         <span class="close">&times;</span>
         <div class="popup-inner">
@@ -1275,7 +1256,7 @@
                 <div class="leadership-cylinder">
                     <span class="leadership-text">Research</span>
                 </div>
-                <p>Issam Alzouby is a Tech Enthusiast and CyberSecurity Student at the University of North Carolina at Charlotte. He has actively participated in innovative projects, including a NASA hackathon where he worked on space-related data analysis. Issam has also demonstrated his technical skills by developing a website and engaging in a drone-building project. His academic pursuits are complemented by his role as an Ai Research Assistant, where he contributes to research and development in the field of artificial intelligence. Additionally, Issam has entrepreneurial experience as the owner of iRepairCLT, where he and his team have successfully reverse-engineered proprietary ASIC boards, showcasing their technical prowess and problem-solving capabilities. Furthermore, Issam has enriched his practical knowledge in the field by working as a Cyber Analyst Intern, gaining hands-on experience in analyzing and securing digital information. Issam’s commitment to technology and research is evident through his various projects and roles.</p>
+                <p class="bio">Issam Alzouby is a Tech Enthusiast and CyberSecurity Student at the University of North Carolina at Charlotte. He has actively participated in innovative projects, including a NASA hackathon where he worked on space-related data analysis. Issam has also demonstrated his technical skills by developing a website and engaging in a drone-building project. His academic pursuits are complemented by his role as an Ai Research Assistant, where he contributes to research and development in the field of artificial intelligence. Additionally, Issam has entrepreneurial experience as the owner of iRepairCLT, where he and his team have successfully reverse-engineered proprietary ASIC boards, showcasing their technical prowess and problem-solving capabilities. Furthermore, Issam has enriched his practical knowledge in the field by working as a Cyber Analyst Intern, gaining hands-on experience in analyzing and securing digital information. Issam’s commitment to technology and research is evident through his various projects and roles.</p>
             </div>
         </div>
     </div>
