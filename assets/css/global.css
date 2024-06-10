@@ -92,7 +92,7 @@ a{
 }
 
 a:hover{
-  color: #97e4ff;
+  color: #00703C;
   text-decoration:none;
   outline:none;
 }
@@ -207,7 +207,7 @@ h4{
   margin: auto;
   width: 300px;
   height: 300px;
-  color: #97e4ff;
+  color: #00703C;
 }
 .preloader, 
 .preloader-ring {
@@ -240,7 +240,7 @@ h4{
     height: 100%;
 }
 .preloader-sector:empty:before {
-    background: linear-gradient(transparent 50%, #97e4fff5 50% 55%, transparent 55%);
+    background: linear-gradient(transparent 50%, #00703C 50% 55%, transparent 55%);
     content: "";
 }
 @keyframes spin-1 {
@@ -942,7 +942,7 @@ img {
   -ms-transition:all 500ms ease;
   -o-transition:all 500ms ease;
   transform: translateY(-100%);
-  border-bottom: 0.5px solid #97e4ff30;
+  border-bottom: 0.5px solid #00703C;
 }
 
 .fixed-header .sticky-header{
@@ -1060,11 +1060,11 @@ img {
   padding: 15px 24px;
 }
 .main-menu .navigation > li > ul > li:hover > a{
-  color: #97e4ff !important;
+  color: #00703C !important;
 }
 .main-menu .navigation > li:hover a,
 .main-menu .navigation > li.current a {
-  color: #97e4ff;
+  color: #00703C;
 }
 
 .main-menu .navigation > li > ul.from-right{
@@ -1097,7 +1097,7 @@ img {
 }
 .main-menu .navigation > li:hover .dropdown-btn,
 .main-menu .navigation > li.current .dropdown-btn{
-  color: #97e4ff !important;
+  color: #00703C !important;
 }
 
 .main-menu .navigation > li > ul > li > a{
@@ -1282,7 +1282,7 @@ img {
   width: 30px;
   display: block;
   margin-bottom: 5px;
-  background-color: #97e4ff;
+  background-color: #00703C;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
@@ -1679,7 +1679,7 @@ div#mCSB_1_container{
 }
 
 .top__hrader__left li span {
-  color: #97e4ff;
+  color: #00703C;
 }
 
 .top__hrader__left li {
@@ -1960,7 +1960,7 @@ body.out .mouse-pointer {
 }
 .footer-widget .widget-title:after {
   content: "";
-  background: #97e4ff;
+  background: #00703C;
   width: 37px;
   height: 2px;
   position: absolute;
@@ -2004,7 +2004,7 @@ body.out .mouse-pointer {
   color: #fff;
 }
 .footer-bottom .copyright p a {
-  color: #97e4ff;
+  color: #00703C;
 }
 .footer-bottom {
   padding-top: 30px;
@@ -2616,7 +2616,7 @@ body.out .mouse-pointer {
 
 
 .sub__title h4 {
-  color: #97e4ff;
+  color: #00703C;
   font-family: Archivo;
   font-size: 20px;
   font-style: normal;
