@@ -106,7 +106,7 @@
     height: 230px;
     width: 230px;
     display: block;
-    background: #97e4ff;
+    background: #00703C;
     border-radius: 50%;
     position: relative;
 }
@@ -314,15 +314,15 @@ section.banner__one {
     transition: all 500ms ease;
 }
 .service__block:hover .service__icon__two:after {
-    background: #97e4ff;
+    background: #00703C;
 }
 .service__block:hover .service__icon__two:before {
-    background: #97e4ff;
+    background: #00703C;
 }
 .service__button a {
     width: 40px;
     height: 40px;
-    background: #97e4ff;
+    background: #00703C;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,7 +396,7 @@ section.banner__one {
     color: #00061A;
 }
 .title.two h2 span {
-    color: #97e4ff;
+    color: #00703C;
 }
 .about__text__block .texts {
     padding: 35px 0px;
@@ -524,7 +524,7 @@ section.banner__one {
     gap: 27px;
 }
 .funfact__content.one {
-    background: #97e4ff;
+    background: #00703C;
 }
 .funfact__content.two {
 background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128, 0.60) 100%);
@@ -607,7 +607,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
 .swiper__button .button_prev:before,
 .swiper__button .button_next:before {
     content: "";
-    background: #97e4ff;
+    background: #00703C;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -686,7 +686,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
     transition: all 500ms ease;
 }
 .testimonials__block__one:hover .quote {
-    background: #97e4ff;
+    background: #00703C;
 }
 .testimonials__block__one .quote span {
     font-size: 25px;
@@ -750,7 +750,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
 }
 .brand__section .brand-carousel:before {
     content: "";
-    background: #97e4ff;
+    background: #00703C;
     position: absolute;
     width: calc(100% - -5em);
     height: 126px;
@@ -777,7 +777,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
 .inner-box .image-box {
     display: block;
     overflow: hidden;
-    background: linear-gradient(219deg, #FB0E76 0%, #97e4ff 100%);
+    background: linear-gradient(219deg, #FB0E76 0%, #00703C 100%);
     border-radius: 5px 5px 0px 0px;
 }
 .inner-box .image-box img {
@@ -800,7 +800,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
     padding: 7px 15px;
     margin: 0px 30px;
     border-radius: 5px 5px 0px 0px;
-    background: #97e4ff;
+    background: #00703C;
 }
 .post__date ul li i {
     width: 29px;
@@ -836,7 +836,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
 .btn__box__two a.theme__btn__two {
     width: 29px;
     height: 35px;
-    background: #97e4ff;
+    background: #00703C;
     display: flex;
     font-size: 15px;
     align-items: center;
@@ -854,7 +854,7 @@ background: linear-gradient(192deg, rgba(173, 216, 230, 0.32) 0%, rgba(0, 0, 128
     transform: rotate(0deg);
 }
 .inner-box:hover a.theme__btn__two {
-    background: #97e4ff;
+    background: #00703C;
 }
 
 .blog__section:before {
@@ -1065,7 +1065,7 @@ section.banner__two {
     letter-spacing: 16px;
 }
 .slider-text-anim.title__last span {
-    color: #97e4ff;
+    color: #00703C;
 }
 .banner__two .content-box p {
     padding-bottom: 40px;
@@ -1130,7 +1130,7 @@ section.banner__two:before {
     transform: translateX(1%);
 }
 .slider-text-anim.two:before {
-    background: #97e4ff;
+    background: #00703C;
 }
 
 
@@ -1159,7 +1159,7 @@ section.banner__two:before {
 
 /* progress-section */
 .progress-box .bar-inner {
-    background: #97e4ff;
+    background: #00703C;
 }
 .progress-box .bar-inner {
     position: relative;
@@ -1183,7 +1183,7 @@ section.banner__two:before {
     content: "";
     width: 5px;
     height: 9px;
-    background: #97e4ff;
+    background: #00703C;
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
@@ -1232,7 +1232,7 @@ section.banner__two:before {
     letter-spacing: 2.88px;
 }
 .about__text__two h4 span {
-    color: #97e4ff;
+    color: #00703C;
 }
 .about__text__two {
     display: flex;
@@ -1322,7 +1322,7 @@ section.banner__two:before {
     padding: 20px 0px 160px;
 }
 .service__button__two a {
-    color: #97e4ff;
+    color: #00703C;
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
@@ -1332,7 +1332,7 @@ section.banner__two:before {
 }
 .service__button__two a:hover {
     letter-spacing: 4.2px;
-    color: #97e4ff;
+    color: #00703C;
 }
 .service__two .pattern-1 {
     width: 100%;
@@ -1396,7 +1396,7 @@ background: linear-gradient(192deg, rgba(151, 228, 255, 0.26) 0%, rgba(6, 14, 38
 }
 .choose__text__block .normal__text:before {
     content: "";
-    background: #97e4ff;
+    background: #00703C;
     position: absolute;
     width: 14px;
     height: 15px;
@@ -1406,7 +1406,7 @@ background: linear-gradient(192deg, rgba(151, 228, 255, 0.26) 0%, rgba(6, 14, 38
 }
 .choose__text__block .normal__text:after {
     content: "";
-    background: #97e4ff;
+    background: #00703C;
     position: absolute;
     width: 14px;
     height: 15px;
@@ -1450,7 +1450,7 @@ background: linear-gradient(192deg, rgba(151, 228, 255, 0.26) 0%, rgba(6, 14, 38
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 .price__data {
-    background: #97e4ff;
+    background: #00703C;
     width: 183px;
     height: 203px;
     position: absolute;
@@ -1514,7 +1514,7 @@ background: linear-gradient(192deg, rgba(151, 228, 255, 0.26) 0%, rgba(6, 14, 38
     color: #fff;
 }
 .price__content:hover .price__icon {
-    background: #97e4ff;
+    background: #00703C;
     color: rgba(0, 6, 26, 1);
 }
 .pricing__section .pattern-1 {
@@ -1584,7 +1584,7 @@ background: linear-gradient(192deg, rgba(151, 228, 255, 0.26) 0%, rgba(6, 14, 38
     width: 86%;
 }
 .protfolio__button a.theme-btn.theme-btn-one {
-    background: #97e4ff;
+    background: #00703C;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1619,7 +1619,7 @@ background: linear-gradient(192deg, rgba(151, 228, 255, 0.26) 0%, rgba(6, 14, 38
     font-weight: 600;
     line-height: normal;
     letter-spacing: 13.2px;
-    color: #97e4ff;
+    color: #00703C;
     text-transform: uppercase;
 }
 .bread__crumb {
@@ -1802,7 +1802,7 @@ h3.comments__title {
     font-weight: 400;
 }
 .comments__content .upper .reply-btn {
-    background: #97e4ff;
+    background: #00703C;
     padding: 5px 20px;
 }
 .comments__form.contact__section {
@@ -1873,7 +1873,7 @@ h3.comments__title {
 }
 
 .sidebar__blog__post .date {
-    color: #97e4ff;
+    color: #00703C;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1938,7 +1938,7 @@ h3.comments__title {
 }
 .contact__block i {
     border-radius: 2px;
-    background: #97e4ff;
+    background: #00703C;
     width: 48px;
     height: 48px;
     display: flex;
@@ -1954,7 +1954,7 @@ h3.comments__title {
     padding-bottom: 40px;
 }
 .contact__block .two i {
-    background: #97e4ff;
+    background: #00703C;
     color: #fff;
 }
 .google__map img {
@@ -2223,7 +2223,7 @@ h3.comments__title {
     font-weight: 700;
 }
 .home__three__banner h1 span.color {
-    color: #97e4ff;
+    color: #00703C;
 }
 .home__three__banner .btn-box {
     padding-bottom: 120px;
@@ -2423,7 +2423,7 @@ section.accomplised__section__two.see__pad.three:before {
     padding: 140px 0px 0px;
 }
 .all__service h3 {
-    background: #97e4ff;
+    background: #00703C;
     padding: 14px 30px;
 }
 .sidebar__widget {
@@ -2479,7 +2479,7 @@ ul.service__details__1__cat {
     padding: 40px 0px 35px;
 }
 .service__right h2 span {
-    color: #97e4ff;
+    color: #00703C;
 }
 .service__right .row {
     padding: 30px 0px 0px;
@@ -2522,7 +2522,7 @@ ul.service__details__1__cat {
     font-size: 40px;
 }
 .service__right li a:hover i {
-    background: #97e4ff;
+    background: #00703C;
     color: #fff;
 }
 .sidebar__widget_network .services__icon i {
@@ -2572,7 +2572,7 @@ ul.service__details__1__cat {
     padding-top: 100px;
 }
 .error__page h1.title span {
-    color: #97e4ff;
+    color: #00703C;
 }
 .page__title.error__page .btn-box {
     justify-content: center;
@@ -2594,7 +2594,7 @@ ul.service__details__1__cat {
     border-radius: 5px;
 }
 .pro__info {
-    background: #97e4ff;
+    background: #00703C;
     border-radius: 10px;
     padding: 60px;
     max-width: 800px;
