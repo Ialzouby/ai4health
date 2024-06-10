@@ -1735,7 +1735,7 @@ div#mCSB_1_container{
   -o-transition-timing-function: cubic-bezier(.19, .94, .336, 1);
   transition-timing-function: cubic-bezier(.19, .94, .336, 1);
   border-radius: 50%;
-  background:linear-gradient(224deg, #800599 0%, #FF0E75 100%);
+  background:linear-gradient(224deg, #00703C 0%, #00703C 100%);
   overflow: hidden;
 }
 .mouse-pointer.display_none{
@@ -1749,93 +1749,93 @@ body.out .mouse-pointer {
   width: 65px;
   height: 65px;
   background: rgba(224,36,79,.0) !important;
-  -webkit-box-shadow: 0 0 30px rgba(224,36,79, 0.4);
-  box-shadow: 0 0 30px rgba(224,36,79, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
   display: block !important;
 }
 .mouse-pointer.style-two{
   background: #41a0ea;
 }
 .mouse-pointer.style-two.large {
-  -webkit-box-shadow: 0 0 30px rgba(65,160,234, 0.4);
-  box-shadow: 0 0 30px rgba(65,160,234, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-three{
   background: #6a36ff;
 }
 .mouse-pointer.style-three.large {
-  -webkit-box-shadow: 0 0 30px rgba(106,54,255, 0.4);
-  box-shadow: 0 0 30px rgba(106,54,255, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-four{
   background: #bc8664;
 }
 .mouse-pointer.style-four.large {
-  -webkit-box-shadow: 0 0 30px rgba(188,134,100, 0.4);
-  box-shadow: 0 0 30px rgba(188,134,100, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-five{
   background: #f1592a;
 }
 .mouse-pointer.style-five.large {
-  -webkit-box-shadow: 0 0 30px rgba(241,89,42, 0.4);
-  box-shadow: 0 0 30px rgba(241,89,42, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-six{
   background: #e93421;
 }
 .mouse-pointer.style-six.large {
-  -webkit-box-shadow: 0 0 30px rgba(233,52,33, 0.4);
-  box-shadow: 0 0 30px rgba(233,52,33, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-seven{
   background: #f38836;
 }
 .mouse-pointer.style-seven.large {
-  -webkit-box-shadow: 0 0 30px rgba(243,136,54, 0.4);
-  box-shadow: 0 0 30px rgba(243,136,54, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-eight{
   background: #ff7f4c;
 }
 .mouse-pointer.style-eight.large {
-  -webkit-box-shadow: 0 0 30px rgba(255,127,76, 0.4);
-  box-shadow: 0 0 30px rgba(255,127,76, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-nine{
   background: #ae8c64;
 }
 .mouse-pointer.style-nine.large {
-  -webkit-box-shadow: 0 0 30px rgba(174,140,100, 0.4);
-  box-shadow: 0 0 30px rgba(174,140,100, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-ten{
   background: #ff5e14;
 }
 .mouse-pointer.style-ten.large {
-  -webkit-box-shadow: 0 0 30px rgba(255,94,20, 0.4);
-  box-shadow: 0 0 30px rgba(255,94,20, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-11{
   background: #fb4754;
 }
 .mouse-pointer.style-11.large {
-  -webkit-box-shadow: 0 0 30px rgba(251,71,84, 0.4);
-  box-shadow: 0 0 30px rgba(251,71,84, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-12{
   background: #00d0f5;
 }
 .mouse-pointer.style-12.large {
-  -webkit-box-shadow: 0 0 30px rgba(0,208,245, 0.4);
-  box-shadow: 0 0 30px rgba(0,208,245, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-13{
-  background: #a44ac5;
+  background: #584ac5;
 }
 .mouse-pointer.style-13.large {
-  -webkit-box-shadow: 0 0 30px rgba(164,74,197, 0.4);
-  box-shadow: 0 0 30px rgba(164,74,197, 0.4);
+  -webkit-box-shadow: 0 0 30px rgba(0,112,60, 0.4);
+  box-shadow: 0 0 30px rgba(0,112,60, 0.4);
 }
 .mouse-pointer.style-14{
   background: #17be74;
@@ -1866,7 +1866,7 @@ body.out .mouse-pointer {
 .mouse-pointer.open {
   width: 80px;
   height: 80px;
-  background: rgba(227,87,18,0);
+  background: rgba(0,112,60,0);
   border: 2px solid #e35712;
 }
 .mouse-pointer .icon{
