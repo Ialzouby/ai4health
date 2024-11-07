@@ -17,10 +17,8 @@
 <h2>🛠️ Tech Stack</h2>
 
 <ul>
-  <li><strong>Languages</strong>: Python, JavaScript</li>
-  <li><strong>Frameworks</strong>: TensorFlow, React</li>
-  <li><strong>Databases</strong>: MongoDB, PostgreSQL</li>
-  <li><strong>Cloud Services</strong>: AWS, Azure</li>
+  <li><strong>Languages</strong>: HTML, CSS, JavaScript</li>
+  <li><strong>Frameworks</strong>: Bootstrap</li>
   <li><strong>Version Control</strong>: Git</li>
 </ul>
 
@@ -43,38 +41,10 @@
 </code></pre>
 
 <ol start="3">
-  <li><strong>Install Dependencies</strong>:</li>
+  <li><strong>Open the <code>index.html</code> File</strong>:</li>
 </ol>
 
-<p>For the backend:</p>
-
-<pre><code>pip install -r requirements.txt
-</code></pre>
-
-<p>For the frontend:</p>
-
-<pre><code>npm install
-</code></pre>
-
-<ol start="4">
-  <li><strong>Set Up Environment Variables</strong>:</li>
-</ol>
-
-<p>Create a <code>.env</code> file in the root directory and add the necessary environment variables as specified in the <code>.env.example</code> file.</p>
-
-<ol start="5">
-  <li><strong>Run the Application</strong>:</li>
-</ol>
-
-<p>Start the backend server:</p>
-
-<pre><code>python app.py
-</code></pre>
-
-<p>Start the frontend development server:</p>
-
-<pre><code>npm start
-</code></pre>
+<p>Open the <code>index.html</code> file in your preferred web browser to view the website locally.</p>
 
 <h2>🤝 Contributing</h2>
 
